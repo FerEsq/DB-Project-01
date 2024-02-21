@@ -24,7 +24,7 @@ class InitialSeeder extends Seeder
 
         User::insert([
             'id'         => 1,
-            'email'      => 'cs@cs.com.gt',
+            'email'      => 'uvg@uvg.com.gt',
             'password'   => '$2y$10$zOrPimtXtgVXl/nphcryoeo/mxS0oB6uBQZpmZFIB8M8ad1wc9vMi',
             'name'       => config('app.name'),
             'active'     => 1,

@@ -10,6 +10,9 @@ class SalonsController extends Controller
     public function index()
     {
         $salons = Salons::all();
+
+        dd($salons);
+
         $params = [
             'salons' => $salons
         ];
