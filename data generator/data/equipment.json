@@ -1,0 +1,98 @@
+[
+    {
+        "id": "1quimica",
+        "name": "tubos de ensayo",
+        "quantity": 29,
+        "tipo": "quimica"
+    },
+    {
+        "id": "2quimica",
+        "name": "pipeta",
+        "quantity": 22,
+        "tipo": "quimica"
+    },
+    {
+        "id": "3quimica",
+        "name": "bureta",
+        "quantity": 29,
+        "tipo": "quimica"
+    },
+    {
+        "id": "4quimica",
+        "name": "microscopio",
+        "quantity": 22,
+        "tipo": "quimica"
+    },
+    {
+        "id": "5quimica",
+        "name": "centrifuga",
+        "quantity": 27,
+        "tipo": "quimica"
+    },
+    {
+        "id": "6quimica",
+        "name": "termometro",
+        "quantity": 23,
+        "tipo": "quimica"
+    },
+    {
+        "id": "1fisica",
+        "name": "amperimetro",
+        "quantity": 21,
+        "tipo": "fisica"
+    },
+    {
+        "id": "2fisica",
+        "name": "calorimetro",
+        "quantity": 25,
+        "tipo": "fisica"
+    },
+    {
+        "id": "3fisica",
+        "name": "iman",
+        "quantity": 28,
+        "tipo": "fisica"
+    },
+    {
+        "id": "4fisica",
+        "name": "CAPSCO",
+        "quantity": 23,
+        "tipo": "fisica"
+    },
+    {
+        "id": "5fisica",
+        "name": "multimetro",
+        "quantity": 23,
+        "tipo": "fisica"
+    },
+    {
+        "id": "6fisica",
+        "name": "reglas",
+        "quantity": 25,
+        "tipo": "fisica"
+    },
+    {
+        "id": "1ciencias de la vida",
+        "name": "microscopio",
+        "quantity": 20,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "2ciencias de la vida",
+        "name": "tubos de ensayo",
+        "quantity": 27,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "3ciencias de la vida",
+        "name": "bureta",
+        "quantity": 26,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "4ciencias de la vida",
+        "name": "placas de petri",
+        "quantity": 22,
+        "tipo": "ciencias de la vida"
+    }
+]
