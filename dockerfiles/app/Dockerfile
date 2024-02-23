@@ -46,6 +46,11 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+RUN pecl install mongodb \
+    && echo 'extension="mongodb.so"' >> ../../etc/php/8.1/cli/php.ini \
+    && composer require mongodb/laravel-mongodb 
+    
+
 RUN setcap "cap_net_bind_service=+ep" /usr/bin/php8.1
 
 COPY dockerfiles/app/start-container /usr/local/bin/start-container
