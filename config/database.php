@@ -97,7 +97,7 @@ return [
             'host' => env('MONGDB_HOST','host.docker.internal'),
             'port' => env('MONGDB_PORT', '27017'),
             'database' => env('MONGDB_DATABASE', 'salonesuvg'),
-            ]
+        ],
 
     ],
 

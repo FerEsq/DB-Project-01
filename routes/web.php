@@ -2,11 +2,11 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\LocaleController;
+use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Catalogs\RolesController;
 use App\Http\Controllers\Catalogs\UsersController;
-use Csgt\Utils\Http\Controllers\ProfileController;
 use App\Http\Controllers\SalonsController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,6 +21,7 @@ use App\Http\Controllers\SalonsController;
 Auth::routes();
 
 Route::group(['middleware' => ['auth']], function () {
+    Route::get('/locale/{locale}', [LocaleController::class, 'index']);
     Route::resource('profile', ProfileController::class, ['only' => ['index', 'detail', 'store']]);
 });
 

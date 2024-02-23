@@ -18,3 +18,4 @@ docker-compose.yml
 /.fleet
 /.idea
 /.vscode
+.DS_Store
