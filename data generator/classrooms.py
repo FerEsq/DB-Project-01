@@ -33,8 +33,8 @@ def classRoomsGenerator(n):
             "identificador": identificador,
             "capacidad": capacidad,
             "laboratorio": laboratorio,
-            "tipo": tipo,
-            "equipos": ids_equipos
+            "tipo": tipo
+            #"equipos": ids_equipos
         }
         classRooms.append(classRoom)
 
