@@ -1,39 +1,46 @@
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
-
 import "./bootstrap";
 
 import { createApp } from "vue";
+import { createPinia } from "pinia";
+import { createI18n } from "vue-i18n";
 
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
+import piniaPluginPersistedstate from "pinia-plugin-persistedstate";
+import Locale from "./lang/Locale";
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 import CatalogsRolesEdit from "../../vendor/csgt/utils/src/resources/views/catalogs/RolesEdit.vue";
 import CatalogsRoleModule from "../../vendor/csgt/utils/src/resources/views/catalogs/RoleModule.vue";
 import CatalogsUsersEdit from "../../vendor/csgt/utils/src/resources/views/catalogs/UsersEdit.vue";
-import Profile from "../../vendor/csgt/utils/src/resources/views/Profile.vue";
-import Salons from "./components/salons/Salons.vue";
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
 const app = createApp();
 app.component("catalogs-roles-edit", CatalogsRolesEdit);
 app.component("catalogs-rolemodule", CatalogsRoleModule);
 app.component("catalogs-users-edit", CatalogsUsersEdit);
-app.component("profile", Profile);
-app.component('horario-todos', Salons)
 
+// const views = import.meta.globEager("./views/*.vue");
+// const folders = import.meta.globEager("./views/*/*.vue");
+// const files = { ...views, ...folders };
+
+// Object.entries(files).map(([key, definition]) => {
+//     let componentName = key
+//         .split("./views/")
+//         .pop()
+//         .split(".")[0]
+//         .replace("/", "-")
+//         .toLocaleLowerCase();
+//     app.component(componentName, definition.default);
+// });
+
+const pinia = createPinia();
+pinia.use(piniaPluginPersistedstate);
+
+let lang = document.head.querySelector('meta[name="lang"]');
+const i18n = createI18n({
+    locale: lang ? lang.content : "en",
+    messages: Locale,
+});
+
+app.use(pinia);
+app.use(i18n);
 app.mount("#app");

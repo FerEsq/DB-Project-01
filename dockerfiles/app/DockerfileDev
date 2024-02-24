@@ -54,7 +54,7 @@ RUN pecl install mongodb \
 RUN setcap "cap_net_bind_service=+ep" /usr/bin/php8.1
 
 COPY dockerfiles/app/start-container /usr/local/bin/start-container
-COPY dockerfiles/app/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY dockerfiles/app/supervisord-dev.conf /etc/supervisor/conf.d/supervisord.conf
 COPY dockerfiles/app/php.ini /etc/php/8.1/cli/conf.d/99-sail.ini
 RUN chmod +x /usr/local/bin/start-container
 

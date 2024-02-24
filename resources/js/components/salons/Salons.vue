@@ -8,10 +8,5 @@
 
 <script>
 export default {
-    methods: {
-        startProposal(type) {
-            this.$emit("startProposal", type);
-        },
-    },
 };
 </script>

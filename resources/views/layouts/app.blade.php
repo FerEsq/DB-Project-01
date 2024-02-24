@@ -8,9 +8,10 @@
     <meta name="description" content="">
     <meta name="author" content="{{ config('APP_COMPANY') }}">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="lang" content="{{ app()->getLocale() }}">
 
     <title>{{ config('app.name') }}</title>
-    @vite(['resources/sass/app.scss', 'resources/js/app.js', 'node_modules/admin-lte/dist/js/adminlte.min.js'])
+    @vite(['resources/sass/app.scss', 'resources/js/app.js', 'node_modules/admin-lte/dist/js/adminlte.min.js?commonjs-entry'])
     @yield('css')
 </head>
 @php
@@ -26,6 +27,22 @@
                         <li class="nav-item">
                             <a class="nav-link" data-lte-toggle="sidebar" href="#" role="button"> <i
                                     class="fas fa-bars"></i> </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" data-bs-toggle="dropdown" href="#" aria-expanded="false">
+                                <i class="fa-solid fa-earth-americas"></i> {{ app()->getLocale() }}
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <a class="dropdown-item" href="/locale/en">
+                                    English
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="/locale/es">
+                                    Español
+                                </a>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -54,10 +71,10 @@
                     <nav class="mt-2">
                         <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu">
                             {!! \Csgt\Utils\Menu::menu() !!}
-                            <li class="nav-header">USUARIO</li>
+                            <li class="nav-header">{{ Str::upper(trans_choice('User', 1)) }}</li>
                             <li class="nav-item">
                                 <a href="/profile" class="nav-link">
-                                    <i class="nav-icon fa fa-user"></i>Perfil
+                                    <i class="nav-icon fa fa-user"></i>{{ __('Profile') }}
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -66,7 +83,7 @@
                                     <a href='#' onclick='this.parentNode.submit(); return false;'
                                         class="nav-link">
                                         <i class="nav-icon fa fa-sign-out-alt"></i>
-                                        <p>Cerrar sesión</p>
+                                        <p>{{ __('Logout') }}</p>
                                     </a>
                                 </form>
                             </li>
@@ -97,9 +114,9 @@
             <footer class="app-footer">
                 <strong>Copyright &copy; {{ date('Y') == 2024 ? '2024' : '2024-' . date('Y') }} <a
                         href="{{ env('APP_COMPANY_URL') }}">{{ env('APP_COMPANY') }}</a>.</strong>
-                Todos los derechos reservados.
+                {{ __('All rights reserved') }}
                 <div class="float-right d-none d-sm-inline-block">
-                    <b>Versión</b> {{ ENV('APP_VERSION') }}
+                    <b>ver.</b> {{ ENV('APP_VERSION') }}
                 </div>
             </footer>
         </div>
