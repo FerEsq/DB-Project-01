@@ -85,8 +85,10 @@ def schedulesGenerator(referencedSalones):
         "20:40"
     ]
 
+    salon = random.choice(referencedSalones)
+
     return {
-        "salon_id": random.choice(referencedSalones)["id"],
+        "salon_id": salon["id"],
         "curso": fake.random_element(cursos),
         "catedratico": [
             {
@@ -95,7 +97,9 @@ def schedulesGenerator(referencedSalones):
             }
         ],
         "inicio": fake.random_element(horarios),
-        "periodos": random.randint(1, 3)
+        "periodos": random.randint(1, 3),
+        "seccion": str(random.randint(1,3)) + "0",
+        "cantEst": salon["capacidad"] + random.randint(-10,10)
     }
 
 def generator(n=100000):

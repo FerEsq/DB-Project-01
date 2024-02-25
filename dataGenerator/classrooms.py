@@ -4,6 +4,7 @@ import random
 def classRoomsGenerator(n):
     edificios = ['A', 'C', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'CIT']
     classRooms = []
+    used_ids = set()
 
     for _ in range(n):
         edificio = random.choice(edificios)
@@ -11,14 +12,20 @@ def classRoomsGenerator(n):
             nivel = random.randint(1, 6)
         else:
             nivel = random.randint(1, 3)
-        
-        identificador = str(nivel) + '{:02d}'.format(random.randint(1, 41))
+
+        while True:
+            identificador = str(nivel) + '{:02d}'.format(random.randint(1, 41))
+            full_id = edificio + identificador
+            if full_id not in used_ids:
+                break
+
+        used_ids.add(full_id)
         capacidad = random.randint(20, 35)
         laboratorio = random.random() > 0.5
         tipo = random.choice(['fisica', 'quimica', 'ciencias de la vida']) if laboratorio else 'comun'
         
         classRoom = {
-            "id": edificio + identificador,
+            "id": full_id,
             "edificio": edificio,
             "nivel": nivel,
             "identificador": identificador,
