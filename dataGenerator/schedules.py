@@ -5,7 +5,7 @@ import random
 fake = Faker()
 
 # Función para generar datos aleatorios
-def schedulesGenerator(referencedSalones):
+def schedulesGenerator(n):
     cursos = [
         "Ciencias de la Vida",
         "Algoritmos y Programación Básica",
@@ -64,7 +64,6 @@ def schedulesGenerator(referencedSalones):
         "Planeacion Estrategica y Operacional",
         "Trabajo de graduacion"
     ]   
-
     horarios = [
         "7:00",
         "7:50",
@@ -85,30 +84,64 @@ def schedulesGenerator(referencedSalones):
         "20:40"
     ]
 
-    salon = random.choice(referencedSalones)
+    schedules = []
+    ocupados = {}
+    salonesOcupados = {}
 
-    return {
-        "salon_id": salon["id"],
-        "curso": fake.random_element(cursos),
-        "catedratico": [
-            {
-                "nombre": fake.name(),
-                "correo": fake.user_name() + "@uvg.edu.gt"
-            }
-        ],
-        "inicio": fake.random_element(horarios),
-        "periodos": random.randint(1, 3),
-        "seccion": str(random.randint(1,3)) + "0",
-        "cantEst": salon["capacidad"] + random.randint(-10,10)
-    }
-
-def generator(n=100000):
     # Cargar datos referenciados desde un archivo JSON
     with open('./data/salones.json') as jsonFilePool:
         referencedSalones = json.load(jsonFilePool)
+
+    for _ in range(n):
+        salon = random.choice(referencedSalones)
+        año = random.randint(2010, 2024)
+        hora = fake.random_element(horarios)
+        ciclo = "ciclo " + str(random.randint(1,2))
         
+        temp = str(año) + ciclo + hora
+        if temp not in ocupados:
+            ocupados[temp] = set()
+
+        temp2 = str(año) + ciclo
+        if temp2 not in salonesOcupados:
+            salonesOcupados[temp2] = set()
+
+        while (salon["id"], hora) in ocupados[temp]:
+            salon = random.choice(referencedSalones)
+            hora = fake.random_element(horarios)
+
+        if salon["id"] not in salonesOcupados[temp2]:
+            if random.random() < 0.30:
+                continue
+        
+        ocupados[temp].add((salon["id"], hora))
+        salonesOcupados[temp2].add(salon["id"])
+        
+        schedule = {
+            "salon_id": salon["id"],
+            "curso": fake.random_element(cursos),
+            "catedratico": [
+                {
+                    "nombre": fake.name(),
+                    "correo": fake.user_name() + "@uvg.edu.gt"
+                }
+            ],
+            "inicio": hora,
+            "periodos": random.randint(1, 3),
+            "seccion": str(random.randint(1,3)) + "0",
+            "cantEst": salon["capacidad"] + random.randint(-15,15),
+            "year": año,
+            "ciclo": ciclo
+        }
+
+        #if random.random() < 0.8:
+        schedules.append(schedule)
+
+    return schedules
+
+def generator(n=150000):
     # Generar una lista de datos aleatorios
-    randomData = [schedulesGenerator(referencedSalones) for _ in range(n)]
+    randomData = schedulesGenerator(n)
 
     # Guardar datos en un archivo JSON
     with open('./data/horarios.json', 'w') as json_file:
