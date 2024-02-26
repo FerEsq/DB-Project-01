@@ -23,8 +23,6 @@ class DatabaseSeeder extends Seeder
             PermissionsSeeder::class,
             ModulePermissionsSeeder::class,
             MenuSeeder::class,
-            PositionsSeeder::class,
-            GendersSeeder::class,
         ]);
         Schema::enableForeignKeyConstraints();
         Model::reguard();
