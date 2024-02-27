@@ -8,11 +8,11 @@ fake = Faker()
 def schedulesGenerator(n):
     cursos = [
         "Ciencias de la Vida",
-        "Algoritmos y Programación Básica",
+        "Algoritmos y Programacion Basica",
         "Pensamiento Cuantitativo",
         "Comunicacion Efectiva",
         "Quimica General",
-        "Introduccion a la Ingeniería",
+        "Introduccion a la Ingenieria",
         "Coaching para la Excelencia",
         "Programacion Orientada a Objetos",
         "Estadistica 1",
@@ -31,7 +31,7 @@ def schedulesGenerator(n):
         "Ecuaciones Diferenciales 1",
         "Investigacion y Pensamiento Cientifico",
         "Programacion de Microprocesadores",
-        "Programacion Plataformas Móviles",
+        "Programacion Plataformas Moviles",
         "Bases de Datos 1",
         "Ingenieria de Software 1",
         "Sistemas y Tecnologias Web",
@@ -84,6 +84,16 @@ def schedulesGenerator(n):
         "20:40"
     ]
 
+    facultades = [
+        "Educacion", 
+        "Ingenieria", 
+        "Ciencias y Humanidades", 
+        "Ciencias Sociales", 
+        "Design Innovations & Arts",
+        "Business and Managment",
+        "Arquitectura"
+    ]
+
     schedules = []
     ocupados = {}
     salonesOcupados = {}
@@ -117,15 +127,20 @@ def schedulesGenerator(n):
         ocupados[temp].add((salon["id"], hora))
         salonesOcupados[temp2].add(salon["id"])
         
+        numCatedraticos = random.randint(1, 5)
+        catedraticos = [
+            {
+                "nombre": fake.name(),
+                "correo": fake.user_name() + "@uvg.edu.gt",
+                "facultad": fake.random_element(facultades)
+            }
+            for _ in range(numCatedraticos)
+        ]
+        
         schedule = {
             "salon_id": salon["id"],
             "curso": fake.random_element(cursos),
-            "catedratico": [
-                {
-                    "nombre": fake.name(),
-                    "correo": fake.user_name() + "@uvg.edu.gt"
-                }
-            ],
+            "encargados": catedraticos,
             "inicio": hora,
             "periodos": random.randint(1, 3),
             "seccion": str(random.randint(1,3)) + "0",
