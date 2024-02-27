@@ -4,16 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Salons;
-use Csgt\Crud\CrudController;
-use Csgt\Cancerbero\Cancerbero;
 
-class SalonsController extends CrudController
+class SalonsController extends Controller
 {
     public function index()
     {
-        dd($salons);
-        $salons = Salons::all();
         
+        $salons = Salons::all();
         $params = [
             'salons' => $salons
         ];
