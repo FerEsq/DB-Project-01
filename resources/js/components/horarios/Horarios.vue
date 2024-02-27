@@ -2,18 +2,17 @@
     <div
         class="row h-100 py-4 justify-content-center align-items-center bg-light text-dark"
     >
-    <h1>Hola Salones</h1>
-    <h2>no hay</h2>
+    <h1>Hola Horarios</h1>
         </div>
 </template>
 
 <script>
 export default {
-    props: ['salons'],
+    props: ['horarios'],
     data() {
-        console.log(this.salons);
+        console.log(this.horarios)
         return {
-            salons: this.salons
+            horarios: this.horarios
         }
     }
 };

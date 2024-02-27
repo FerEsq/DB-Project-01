@@ -16,6 +16,7 @@ class Sections
             new CsgtModule('Roles', 'Catalogs - Roles', 'catalogs.roles', 200, 'fa fa-key', 'catalogs'),
             new CsgtModule('Horarios', '', 'horarios', 3000, 'fa fa-list', null, []),
             new CsgtModule('Todos los horarios', 'Horarios - Todos', 'horarios.todos', 100, 'fa fa-star', 'horarios'),
+            new CsgtModule('Todos los salones', 'Horarios - Salones', 'horarios.salones', 100, 'fa fa-star', 'horarios'),
         ]);
     }
 }

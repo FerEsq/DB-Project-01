@@ -6,6 +6,7 @@ use App\Http\Controllers\LocaleController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Catalogs\RolesController;
 use App\Http\Controllers\Catalogs\UsersController;
+use App\Http\Controllers\HorariosController;
 use App\Http\Controllers\SalonsController;
 /*
 |--------------------------------------------------------------------------
@@ -34,6 +35,7 @@ Route::group(['middleware' => ['auth', 'cancerbero']], function () {
     });
 
     Route::prefix('horarios')->name('horarios.')->group(function () {
-        Route::resource('todos', SalonsController::class);
+        Route::resource('todos', HorariosController::class);
+        Route::resource('salones', SalonsController::class);
     });
 });

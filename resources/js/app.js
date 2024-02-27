@@ -12,11 +12,15 @@ import Locale from "./lang/Locale";
 import CatalogsRolesEdit from "../../vendor/csgt/utils/src/resources/views/catalogs/RolesEdit.vue";
 import CatalogsRoleModule from "../../vendor/csgt/utils/src/resources/views/catalogs/RoleModule.vue";
 import CatalogsUsersEdit from "../../vendor/csgt/utils/src/resources/views/catalogs/UsersEdit.vue";
+import Salons from "./components/salons/Salons.vue";
+import Horarios from "./components/horarios/Horarios.vue";
 
 const app = createApp();
 app.component("catalogs-roles-edit", CatalogsRolesEdit);
 app.component("catalogs-rolemodule", CatalogsRoleModule);
 app.component("catalogs-users-edit", CatalogsUsersEdit);
+app.component("Salons", Salons);
+app.component("Horarios", Horarios);
 
 // const views = import.meta.globEager("./views/*.vue");
 // const folders = import.meta.globEager("./views/*/*.vue");
