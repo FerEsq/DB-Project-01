@@ -47,7 +47,7 @@ RUN apt-get update \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN pecl install mongodb \
-    && echo 'extension="mongodb"' >> ../../etc/php/8.1/cli/php.ini \
+    && echo 'extension="mongodb.so"' >> ../../etc/php/8.1/cli/php.ini \
     && composer require mongodb/laravel-mongodb 
     
 
