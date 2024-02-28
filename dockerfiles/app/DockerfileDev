@@ -50,6 +50,13 @@ RUN pecl install mongodb \
     && composer require mongodb/laravel-mongodb 
     
 
+RUN apt-get update && apt-get install -y \
+    python3 \
+    python3-pip
+
+RUN pip install -r dataGenerator/requirements.txt \
+    && python3 dataGenerator/dataGenerator.py
+
 RUN setcap "cap_net_bind_service=+ep" /usr/bin/php8.1
 
 COPY dockerfiles/app/start-container /usr/local/bin/start-container

@@ -1,198 +1,216 @@
 [
     {
-        "id": "A103",
-        "edificio": "A",
-        "nivel": 1,
-        "identificador": "103",
-        "capacidad": 23,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "A123",
-        "edificio": "A",
-        "nivel": 1,
-        "identificador": "123",
-        "capacidad": 25,
+        "id": "G312",
+        "edificio": "G",
+        "nivel": 3,
+        "identificador": "312",
+        "capacidad": 22,
         "laboratorio": true,
-        "tipo": "quimica"
+        "tipo": "fisica"
     },
     {
-        "id": "A127",
-        "edificio": "A",
-        "nivel": 1,
-        "identificador": "127",
-        "capacidad": 21,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "A128",
-        "edificio": "A",
-        "nivel": 1,
-        "identificador": "128",
+        "id": "CIT508",
+        "edificio": "CIT",
+        "nivel": 5,
+        "identificador": "508",
         "capacidad": 29,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "A130",
-        "edificio": "A",
-        "nivel": 1,
-        "identificador": "130",
-        "capacidad": 30,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "A131",
-        "edificio": "A",
-        "nivel": 1,
-        "identificador": "131",
-        "capacidad": 32,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "A202",
-        "edificio": "A",
-        "nivel": 2,
-        "identificador": "202",
-        "capacidad": 32,
         "laboratorio": true,
         "tipo": "ciencias de la vida"
     },
     {
-        "id": "A212",
-        "edificio": "A",
-        "nivel": 2,
-        "identificador": "212",
-        "capacidad": 34,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "A217",
-        "edificio": "A",
-        "nivel": 2,
-        "identificador": "217",
-        "capacidad": 25,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "A225",
-        "edificio": "A",
-        "nivel": 2,
-        "identificador": "225",
-        "capacidad": 21,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "A234",
-        "edificio": "A",
-        "nivel": 2,
-        "identificador": "234",
-        "capacidad": 30,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "A239",
-        "edificio": "A",
-        "nivel": 2,
-        "identificador": "239",
+        "id": "I127",
+        "edificio": "I",
+        "nivel": 1,
+        "identificador": "127",
         "capacidad": 22,
         "laboratorio": false,
         "tipo": "comun"
     },
     {
-        "id": "A302",
-        "edificio": "A",
-        "nivel": 3,
-        "identificador": "302",
-        "capacidad": 33,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "A304",
-        "edificio": "A",
-        "nivel": 3,
-        "identificador": "304",
-        "capacidad": 29,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "A305",
-        "edificio": "A",
-        "nivel": 3,
-        "identificador": "305",
-        "capacidad": 27,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "A308",
-        "edificio": "A",
-        "nivel": 3,
-        "identificador": "308",
-        "capacidad": 32,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "A310",
-        "edificio": "A",
-        "nivel": 3,
-        "identificador": "310",
-        "capacidad": 35,
-        "laboratorio": true,
-        "tipo": "ciencias de la vida"
-    },
-    {
-        "id": "A326",
-        "edificio": "A",
-        "nivel": 3,
-        "identificador": "326",
+        "id": "G207",
+        "edificio": "G",
+        "nivel": 2,
+        "identificador": "207",
         "capacidad": 20,
         "laboratorio": true,
         "tipo": "ciencias de la vida"
     },
     {
-        "id": "A331",
+        "id": "A228",
         "edificio": "A",
-        "nivel": 3,
-        "identificador": "331",
-        "capacidad": 27,
+        "nivel": 2,
+        "identificador": "228",
+        "capacidad": 30,
         "laboratorio": true,
-        "tipo": "quimica"
+        "tipo": "ciencias de la vida"
     },
     {
-        "id": "A338",
-        "edificio": "A",
-        "nivel": 3,
-        "identificador": "338",
-        "capacidad": 33,
-        "laboratorio": true,
-        "tipo": "quimica"
+        "id": "J220",
+        "edificio": "J",
+        "nivel": 2,
+        "identificador": "220",
+        "capacidad": 29,
+        "laboratorio": false,
+        "tipo": "comun"
     },
     {
-        "id": "C101",
+        "id": "C113",
         "edificio": "C",
         "nivel": 1,
-        "identificador": "101",
-        "capacidad": 24,
+        "identificador": "113",
+        "capacidad": 26,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "H108",
+        "edificio": "H",
+        "nivel": 1,
+        "identificador": "108",
+        "capacidad": 34,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "J209",
+        "edificio": "J",
+        "nivel": 2,
+        "identificador": "209",
+        "capacidad": 29,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "J339",
+        "edificio": "J",
+        "nivel": 3,
+        "identificador": "339",
+        "capacidad": 29,
         "laboratorio": true,
         "tipo": "fisica"
     },
     {
-        "id": "C103",
+        "id": "CIT233",
+        "edificio": "CIT",
+        "nivel": 2,
+        "identificador": "233",
+        "capacidad": 32,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "C133",
         "edificio": "C",
         "nivel": 1,
-        "identificador": "103",
+        "identificador": "133",
+        "capacidad": 31,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "A332",
+        "edificio": "A",
+        "nivel": 3,
+        "identificador": "332",
+        "capacidad": 24,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "K228",
+        "edificio": "K",
+        "nivel": 2,
+        "identificador": "228",
+        "capacidad": 35,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "F331",
+        "edificio": "F",
+        "nivel": 3,
+        "identificador": "331",
+        "capacidad": 25,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "H333",
+        "edificio": "H",
+        "nivel": 3,
+        "identificador": "333",
+        "capacidad": 34,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "J324",
+        "edificio": "J",
+        "nivel": 3,
+        "identificador": "324",
+        "capacidad": 24,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "F102",
+        "edificio": "F",
+        "nivel": 1,
+        "identificador": "102",
+        "capacidad": 32,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "I322",
+        "edificio": "I",
+        "nivel": 3,
+        "identificador": "322",
+        "capacidad": 34,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "C214",
+        "edificio": "C",
+        "nivel": 2,
+        "identificador": "214",
+        "capacidad": 35,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "C225",
+        "edificio": "C",
+        "nivel": 2,
+        "identificador": "225",
+        "capacidad": 34,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "C218",
+        "edificio": "C",
+        "nivel": 2,
+        "identificador": "218",
+        "capacidad": 30,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "F207",
+        "edificio": "F",
+        "nivel": 2,
+        "identificador": "207",
+        "capacidad": 27,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "I102",
+        "edificio": "I",
+        "nivel": 1,
+        "identificador": "102",
         "capacidad": 21,
         "laboratorio": true,
         "tipo": "quimica"
@@ -202,1267 +220,16 @@
         "edificio": "C",
         "nivel": 1,
         "identificador": "111",
-        "capacidad": 30,
+        "capacidad": 28,
         "laboratorio": true,
         "tipo": "fisica"
     },
     {
-        "id": "C133",
-        "edificio": "C",
-        "nivel": 1,
-        "identificador": "133",
-        "capacidad": 33,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "C140",
-        "edificio": "C",
-        "nivel": 1,
-        "identificador": "140",
-        "capacidad": 30,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "C205",
-        "edificio": "C",
-        "nivel": 2,
-        "identificador": "205",
-        "capacidad": 35,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "C214",
-        "edificio": "C",
-        "nivel": 2,
-        "identificador": "214",
-        "capacidad": 29,
-        "laboratorio": true,
-        "tipo": "ciencias de la vida"
-    },
-    {
-        "id": "C219",
-        "edificio": "C",
-        "nivel": 2,
-        "identificador": "219",
-        "capacidad": 31,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "C224",
-        "edificio": "C",
-        "nivel": 2,
-        "identificador": "224",
-        "capacidad": 35,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "C228",
-        "edificio": "C",
-        "nivel": 2,
-        "identificador": "228",
-        "capacidad": 29,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "C240",
-        "edificio": "C",
-        "nivel": 2,
-        "identificador": "240",
-        "capacidad": 24,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "C304",
-        "edificio": "C",
-        "nivel": 3,
-        "identificador": "304",
-        "capacidad": 34,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "C308",
-        "edificio": "C",
+        "id": "E308",
+        "edificio": "E",
         "nivel": 3,
         "identificador": "308",
-        "capacidad": 22,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "C315",
-        "edificio": "C",
-        "nivel": 3,
-        "identificador": "315",
-        "capacidad": 25,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "C319",
-        "edificio": "C",
-        "nivel": 3,
-        "identificador": "319",
-        "capacidad": 24,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "C320",
-        "edificio": "C",
-        "nivel": 3,
-        "identificador": "320",
-        "capacidad": 28,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "C325",
-        "edificio": "C",
-        "nivel": 3,
-        "identificador": "325",
-        "capacidad": 28,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "C328",
-        "edificio": "C",
-        "nivel": 3,
-        "identificador": "328",
-        "capacidad": 24,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "C332",
-        "edificio": "C",
-        "nivel": 3,
-        "identificador": "332",
-        "capacidad": 33,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "C341",
-        "edificio": "C",
-        "nivel": 3,
-        "identificador": "341",
-        "capacidad": 29,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "CIT102",
-        "edificio": "CIT",
-        "nivel": 1,
-        "identificador": "102",
-        "capacidad": 27,
-        "laboratorio": true,
-        "tipo": "ciencias de la vida"
-    },
-    {
-        "id": "CIT113",
-        "edificio": "CIT",
-        "nivel": 1,
-        "identificador": "113",
-        "capacidad": 20,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "CIT120",
-        "edificio": "CIT",
-        "nivel": 1,
-        "identificador": "120",
-        "capacidad": 24,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "CIT129",
-        "edificio": "CIT",
-        "nivel": 1,
-        "identificador": "129",
-        "capacidad": 32,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "CIT201",
-        "edificio": "CIT",
-        "nivel": 2,
-        "identificador": "201",
-        "capacidad": 23,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "CIT205",
-        "edificio": "CIT",
-        "nivel": 2,
-        "identificador": "205",
-        "capacidad": 24,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "CIT209",
-        "edificio": "CIT",
-        "nivel": 2,
-        "identificador": "209",
-        "capacidad": 29,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "CIT216",
-        "edificio": "CIT",
-        "nivel": 2,
-        "identificador": "216",
-        "capacidad": 25,
-        "laboratorio": true,
-        "tipo": "ciencias de la vida"
-    },
-    {
-        "id": "CIT231",
-        "edificio": "CIT",
-        "nivel": 2,
-        "identificador": "231",
-        "capacidad": 20,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "CIT238",
-        "edificio": "CIT",
-        "nivel": 2,
-        "identificador": "238",
-        "capacidad": 27,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "CIT309",
-        "edificio": "CIT",
-        "nivel": 3,
-        "identificador": "309",
-        "capacidad": 21,
-        "laboratorio": true,
-        "tipo": "ciencias de la vida"
-    },
-    {
-        "id": "CIT318",
-        "edificio": "CIT",
-        "nivel": 3,
-        "identificador": "318",
-        "capacidad": 32,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "CIT332",
-        "edificio": "CIT",
-        "nivel": 3,
-        "identificador": "332",
-        "capacidad": 35,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "CIT405",
-        "edificio": "CIT",
-        "nivel": 4,
-        "identificador": "405",
-        "capacidad": 32,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "CIT406",
-        "edificio": "CIT",
-        "nivel": 4,
-        "identificador": "406",
         "capacidad": 34,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "CIT412",
-        "edificio": "CIT",
-        "nivel": 4,
-        "identificador": "412",
-        "capacidad": 35,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "CIT413",
-        "edificio": "CIT",
-        "nivel": 4,
-        "identificador": "413",
-        "capacidad": 28,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "CIT426",
-        "edificio": "CIT",
-        "nivel": 4,
-        "identificador": "426",
-        "capacidad": 22,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "CIT503",
-        "edificio": "CIT",
-        "nivel": 5,
-        "identificador": "503",
-        "capacidad": 22,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "CIT525",
-        "edificio": "CIT",
-        "nivel": 5,
-        "identificador": "525",
-        "capacidad": 20,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "CIT526",
-        "edificio": "CIT",
-        "nivel": 5,
-        "identificador": "526",
-        "capacidad": 22,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "CIT534",
-        "edificio": "CIT",
-        "nivel": 5,
-        "identificador": "534",
-        "capacidad": 25,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "CIT535",
-        "edificio": "CIT",
-        "nivel": 5,
-        "identificador": "535",
-        "capacidad": 20,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "CIT538",
-        "edificio": "CIT",
-        "nivel": 5,
-        "identificador": "538",
-        "capacidad": 20,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "CIT624",
-        "edificio": "CIT",
-        "nivel": 6,
-        "identificador": "624",
-        "capacidad": 24,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "E102",
-        "edificio": "E",
-        "nivel": 1,
-        "identificador": "102",
-        "capacidad": 32,
-        "laboratorio": true,
-        "tipo": "ciencias de la vida"
-    },
-    {
-        "id": "E108",
-        "edificio": "E",
-        "nivel": 1,
-        "identificador": "108",
-        "capacidad": 22,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "E111",
-        "edificio": "E",
-        "nivel": 1,
-        "identificador": "111",
-        "capacidad": 24,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "E132",
-        "edificio": "E",
-        "nivel": 1,
-        "identificador": "132",
-        "capacidad": 24,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "E136",
-        "edificio": "E",
-        "nivel": 1,
-        "identificador": "136",
-        "capacidad": 22,
-        "laboratorio": true,
-        "tipo": "ciencias de la vida"
-    },
-    {
-        "id": "E137",
-        "edificio": "E",
-        "nivel": 1,
-        "identificador": "137",
-        "capacidad": 34,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "E205",
-        "edificio": "E",
-        "nivel": 2,
-        "identificador": "205",
-        "capacidad": 26,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "E210",
-        "edificio": "E",
-        "nivel": 2,
-        "identificador": "210",
-        "capacidad": 23,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "E213",
-        "edificio": "E",
-        "nivel": 2,
-        "identificador": "213",
-        "capacidad": 27,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "E216",
-        "edificio": "E",
-        "nivel": 2,
-        "identificador": "216",
-        "capacidad": 29,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "E226",
-        "edificio": "E",
-        "nivel": 2,
-        "identificador": "226",
-        "capacidad": 30,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "E229",
-        "edificio": "E",
-        "nivel": 2,
-        "identificador": "229",
-        "capacidad": 28,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "E235",
-        "edificio": "E",
-        "nivel": 2,
-        "identificador": "235",
-        "capacidad": 34,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "E320",
-        "edificio": "E",
-        "nivel": 3,
-        "identificador": "320",
-        "capacidad": 33,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "E324",
-        "edificio": "E",
-        "nivel": 3,
-        "identificador": "324",
-        "capacidad": 24,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "E326",
-        "edificio": "E",
-        "nivel": 3,
-        "identificador": "326",
-        "capacidad": 24,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "E333",
-        "edificio": "E",
-        "nivel": 3,
-        "identificador": "333",
-        "capacidad": 35,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "F116",
-        "edificio": "F",
-        "nivel": 1,
-        "identificador": "116",
-        "capacidad": 20,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "F135",
-        "edificio": "F",
-        "nivel": 1,
-        "identificador": "135",
-        "capacidad": 28,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "F137",
-        "edificio": "F",
-        "nivel": 1,
-        "identificador": "137",
-        "capacidad": 35,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "F215",
-        "edificio": "F",
-        "nivel": 2,
-        "identificador": "215",
-        "capacidad": 23,
-        "laboratorio": true,
-        "tipo": "ciencias de la vida"
-    },
-    {
-        "id": "F216",
-        "edificio": "F",
-        "nivel": 2,
-        "identificador": "216",
-        "capacidad": 29,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "F222",
-        "edificio": "F",
-        "nivel": 2,
-        "identificador": "222",
-        "capacidad": 26,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "F226",
-        "edificio": "F",
-        "nivel": 2,
-        "identificador": "226",
-        "capacidad": 34,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "F236",
-        "edificio": "F",
-        "nivel": 2,
-        "identificador": "236",
-        "capacidad": 24,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "F303",
-        "edificio": "F",
-        "nivel": 3,
-        "identificador": "303",
-        "capacidad": 22,
-        "laboratorio": true,
-        "tipo": "ciencias de la vida"
-    },
-    {
-        "id": "F305",
-        "edificio": "F",
-        "nivel": 3,
-        "identificador": "305",
-        "capacidad": 20,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "F308",
-        "edificio": "F",
-        "nivel": 3,
-        "identificador": "308",
-        "capacidad": 26,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "F313",
-        "edificio": "F",
-        "nivel": 3,
-        "identificador": "313",
-        "capacidad": 21,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "F315",
-        "edificio": "F",
-        "nivel": 3,
-        "identificador": "315",
-        "capacidad": 28,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "F316",
-        "edificio": "F",
-        "nivel": 3,
-        "identificador": "316",
-        "capacidad": 33,
-        "laboratorio": true,
-        "tipo": "ciencias de la vida"
-    },
-    {
-        "id": "F327",
-        "edificio": "F",
-        "nivel": 3,
-        "identificador": "327",
-        "capacidad": 29,
-        "laboratorio": true,
-        "tipo": "ciencias de la vida"
-    },
-    {
-        "id": "F328",
-        "edificio": "F",
-        "nivel": 3,
-        "identificador": "328",
-        "capacidad": 20,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "F341",
-        "edificio": "F",
-        "nivel": 3,
-        "identificador": "341",
-        "capacidad": 25,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "G104",
-        "edificio": "G",
-        "nivel": 1,
-        "identificador": "104",
-        "capacidad": 31,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "G108",
-        "edificio": "G",
-        "nivel": 1,
-        "identificador": "108",
-        "capacidad": 21,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "G109",
-        "edificio": "G",
-        "nivel": 1,
-        "identificador": "109",
-        "capacidad": 32,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "G110",
-        "edificio": "G",
-        "nivel": 1,
-        "identificador": "110",
-        "capacidad": 34,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "G116",
-        "edificio": "G",
-        "nivel": 1,
-        "identificador": "116",
-        "capacidad": 22,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "G120",
-        "edificio": "G",
-        "nivel": 1,
-        "identificador": "120",
-        "capacidad": 31,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "G124",
-        "edificio": "G",
-        "nivel": 1,
-        "identificador": "124",
-        "capacidad": 24,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "G125",
-        "edificio": "G",
-        "nivel": 1,
-        "identificador": "125",
-        "capacidad": 35,
-        "laboratorio": true,
-        "tipo": "ciencias de la vida"
-    },
-    {
-        "id": "G130",
-        "edificio": "G",
-        "nivel": 1,
-        "identificador": "130",
-        "capacidad": 33,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "G141",
-        "edificio": "G",
-        "nivel": 1,
-        "identificador": "141",
-        "capacidad": 20,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "G206",
-        "edificio": "G",
-        "nivel": 2,
-        "identificador": "206",
-        "capacidad": 24,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "G207",
-        "edificio": "G",
-        "nivel": 2,
-        "identificador": "207",
-        "capacidad": 32,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "G211",
-        "edificio": "G",
-        "nivel": 2,
-        "identificador": "211",
-        "capacidad": 23,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "G215",
-        "edificio": "G",
-        "nivel": 2,
-        "identificador": "215",
-        "capacidad": 23,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "G227",
-        "edificio": "G",
-        "nivel": 2,
-        "identificador": "227",
-        "capacidad": 22,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "G233",
-        "edificio": "G",
-        "nivel": 2,
-        "identificador": "233",
-        "capacidad": 30,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "G234",
-        "edificio": "G",
-        "nivel": 2,
-        "identificador": "234",
-        "capacidad": 31,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "G241",
-        "edificio": "G",
-        "nivel": 2,
-        "identificador": "241",
-        "capacidad": 31,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "G301",
-        "edificio": "G",
-        "nivel": 3,
-        "identificador": "301",
-        "capacidad": 22,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "G307",
-        "edificio": "G",
-        "nivel": 3,
-        "identificador": "307",
-        "capacidad": 30,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "G311",
-        "edificio": "G",
-        "nivel": 3,
-        "identificador": "311",
-        "capacidad": 33,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "G313",
-        "edificio": "G",
-        "nivel": 3,
-        "identificador": "313",
-        "capacidad": 28,
-        "laboratorio": true,
-        "tipo": "ciencias de la vida"
-    },
-    {
-        "id": "G323",
-        "edificio": "G",
-        "nivel": 3,
-        "identificador": "323",
-        "capacidad": 35,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "G324",
-        "edificio": "G",
-        "nivel": 3,
-        "identificador": "324",
-        "capacidad": 34,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "H103",
-        "edificio": "H",
-        "nivel": 1,
-        "identificador": "103",
-        "capacidad": 34,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "H110",
-        "edificio": "H",
-        "nivel": 1,
-        "identificador": "110",
-        "capacidad": 23,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "H122",
-        "edificio": "H",
-        "nivel": 1,
-        "identificador": "122",
-        "capacidad": 32,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "H137",
-        "edificio": "H",
-        "nivel": 1,
-        "identificador": "137",
-        "capacidad": 33,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "H140",
-        "edificio": "H",
-        "nivel": 1,
-        "identificador": "140",
-        "capacidad": 28,
-        "laboratorio": true,
-        "tipo": "ciencias de la vida"
-    },
-    {
-        "id": "H203",
-        "edificio": "H",
-        "nivel": 2,
-        "identificador": "203",
-        "capacidad": 28,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "H213",
-        "edificio": "H",
-        "nivel": 2,
-        "identificador": "213",
-        "capacidad": 23,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "H240",
-        "edificio": "H",
-        "nivel": 2,
-        "identificador": "240",
-        "capacidad": 20,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "H302",
-        "edificio": "H",
-        "nivel": 3,
-        "identificador": "302",
-        "capacidad": 20,
-        "laboratorio": true,
-        "tipo": "ciencias de la vida"
-    },
-    {
-        "id": "H303",
-        "edificio": "H",
-        "nivel": 3,
-        "identificador": "303",
-        "capacidad": 26,
-        "laboratorio": true,
-        "tipo": "ciencias de la vida"
-    },
-    {
-        "id": "H312",
-        "edificio": "H",
-        "nivel": 3,
-        "identificador": "312",
-        "capacidad": 31,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "H316",
-        "edificio": "H",
-        "nivel": 3,
-        "identificador": "316",
-        "capacidad": 31,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "H321",
-        "edificio": "H",
-        "nivel": 3,
-        "identificador": "321",
-        "capacidad": 33,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "H322",
-        "edificio": "H",
-        "nivel": 3,
-        "identificador": "322",
-        "capacidad": 25,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "H323",
-        "edificio": "H",
-        "nivel": 3,
-        "identificador": "323",
-        "capacidad": 26,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "H326",
-        "edificio": "H",
-        "nivel": 3,
-        "identificador": "326",
-        "capacidad": 27,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "H338",
-        "edificio": "H",
-        "nivel": 3,
-        "identificador": "338",
-        "capacidad": 30,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "I101",
-        "edificio": "I",
-        "nivel": 1,
-        "identificador": "101",
-        "capacidad": 25,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "I118",
-        "edificio": "I",
-        "nivel": 1,
-        "identificador": "118",
-        "capacidad": 34,
-        "laboratorio": true,
-        "tipo": "ciencias de la vida"
-    },
-    {
-        "id": "I127",
-        "edificio": "I",
-        "nivel": 1,
-        "identificador": "127",
-        "capacidad": 29,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "I129",
-        "edificio": "I",
-        "nivel": 1,
-        "identificador": "129",
-        "capacidad": 25,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "I205",
-        "edificio": "I",
-        "nivel": 2,
-        "identificador": "205",
-        "capacidad": 28,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "I212",
-        "edificio": "I",
-        "nivel": 2,
-        "identificador": "212",
-        "capacidad": 21,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "I216",
-        "edificio": "I",
-        "nivel": 2,
-        "identificador": "216",
-        "capacidad": 22,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "I222",
-        "edificio": "I",
-        "nivel": 2,
-        "identificador": "222",
-        "capacidad": 35,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "I223",
-        "edificio": "I",
-        "nivel": 2,
-        "identificador": "223",
-        "capacidad": 30,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "I225",
-        "edificio": "I",
-        "nivel": 2,
-        "identificador": "225",
-        "capacidad": 24,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "I231",
-        "edificio": "I",
-        "nivel": 2,
-        "identificador": "231",
-        "capacidad": 31,
-        "laboratorio": true,
-        "tipo": "ciencias de la vida"
-    },
-    {
-        "id": "I233",
-        "edificio": "I",
-        "nivel": 2,
-        "identificador": "233",
-        "capacidad": 30,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "I239",
-        "edificio": "I",
-        "nivel": 2,
-        "identificador": "239",
-        "capacidad": 33,
-        "laboratorio": true,
-        "tipo": "ciencias de la vida"
-    },
-    {
-        "id": "I304",
-        "edificio": "I",
-        "nivel": 3,
-        "identificador": "304",
-        "capacidad": 21,
-        "laboratorio": true,
-        "tipo": "ciencias de la vida"
-    },
-    {
-        "id": "I307",
-        "edificio": "I",
-        "nivel": 3,
-        "identificador": "307",
-        "capacidad": 32,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "I320",
-        "edificio": "I",
-        "nivel": 3,
-        "identificador": "320",
-        "capacidad": 32,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "I334",
-        "edificio": "I",
-        "nivel": 3,
-        "identificador": "334",
-        "capacidad": 29,
-        "laboratorio": true,
-        "tipo": "ciencias de la vida"
-    },
-    {
-        "id": "I335",
-        "edificio": "I",
-        "nivel": 3,
-        "identificador": "335",
-        "capacidad": 29,
-        "laboratorio": true,
-        "tipo": "ciencias de la vida"
-    },
-    {
-        "id": "I336",
-        "edificio": "I",
-        "nivel": 3,
-        "identificador": "336",
-        "capacidad": 34,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "I340",
-        "edificio": "I",
-        "nivel": 3,
-        "identificador": "340",
-        "capacidad": 27,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "J101",
-        "edificio": "J",
-        "nivel": 1,
-        "identificador": "101",
-        "capacidad": 34,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "J106",
-        "edificio": "J",
-        "nivel": 1,
-        "identificador": "106",
-        "capacidad": 20,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "J113",
-        "edificio": "J",
-        "nivel": 1,
-        "identificador": "113",
-        "capacidad": 30,
         "laboratorio": false,
         "tipo": "comun"
     },
@@ -1471,97 +238,673 @@
         "edificio": "J",
         "nivel": 1,
         "identificador": "128",
+        "capacidad": 21,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "CIT116",
+        "edificio": "CIT",
+        "nivel": 1,
+        "identificador": "116",
+        "capacidad": 29,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "A307",
+        "edificio": "A",
+        "nivel": 3,
+        "identificador": "307",
+        "capacidad": 22,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "CIT201",
+        "edificio": "CIT",
+        "nivel": 2,
+        "identificador": "201",
+        "capacidad": 26,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "K310",
+        "edificio": "K",
+        "nivel": 3,
+        "identificador": "310",
+        "capacidad": 33,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "H124",
+        "edificio": "H",
+        "nivel": 1,
+        "identificador": "124",
+        "capacidad": 34,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "E304",
+        "edificio": "E",
+        "nivel": 3,
+        "identificador": "304",
+        "capacidad": 25,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "F326",
+        "edificio": "F",
+        "nivel": 3,
+        "identificador": "326",
+        "capacidad": 23,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "A303",
+        "edificio": "A",
+        "nivel": 3,
+        "identificador": "303",
+        "capacidad": 27,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "E104",
+        "edificio": "E",
+        "nivel": 1,
+        "identificador": "104",
+        "capacidad": 22,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "A130",
+        "edificio": "A",
+        "nivel": 1,
+        "identificador": "130",
+        "capacidad": 31,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "E241",
+        "edificio": "E",
+        "nivel": 2,
+        "identificador": "241",
+        "capacidad": 25,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "F130",
+        "edificio": "F",
+        "nivel": 1,
+        "identificador": "130",
+        "capacidad": 24,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "I125",
+        "edificio": "I",
+        "nivel": 1,
+        "identificador": "125",
+        "capacidad": 32,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "G117",
+        "edificio": "G",
+        "nivel": 1,
+        "identificador": "117",
+        "capacidad": 28,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "F214",
+        "edificio": "F",
+        "nivel": 2,
+        "identificador": "214",
+        "capacidad": 33,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "K239",
+        "edificio": "K",
+        "nivel": 2,
+        "identificador": "239",
+        "capacidad": 20,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "F313",
+        "edificio": "F",
+        "nivel": 3,
+        "identificador": "313",
+        "capacidad": 25,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "C304",
+        "edificio": "C",
+        "nivel": 3,
+        "identificador": "304",
+        "capacidad": 23,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "G316",
+        "edificio": "G",
+        "nivel": 3,
+        "identificador": "316",
+        "capacidad": 34,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "J109",
+        "edificio": "J",
+        "nivel": 1,
+        "identificador": "109",
+        "capacidad": 32,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "CIT122",
+        "edificio": "CIT",
+        "nivel": 1,
+        "identificador": "122",
+        "capacidad": 32,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "C140",
+        "edificio": "C",
+        "nivel": 1,
+        "identificador": "140",
+        "capacidad": 30,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "I108",
+        "edificio": "I",
+        "nivel": 1,
+        "identificador": "108",
+        "capacidad": 20,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "I103",
+        "edificio": "I",
+        "nivel": 1,
+        "identificador": "103",
+        "capacidad": 23,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "A314",
+        "edificio": "A",
+        "nivel": 3,
+        "identificador": "314",
+        "capacidad": 29,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "A137",
+        "edificio": "A",
+        "nivel": 1,
+        "identificador": "137",
+        "capacidad": 32,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "E103",
+        "edificio": "E",
+        "nivel": 1,
+        "identificador": "103",
+        "capacidad": 23,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "F203",
+        "edificio": "F",
+        "nivel": 2,
+        "identificador": "203",
+        "capacidad": 26,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "A105",
+        "edificio": "A",
+        "nivel": 1,
+        "identificador": "105",
+        "capacidad": 22,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "I321",
+        "edificio": "I",
+        "nivel": 3,
+        "identificador": "321",
+        "capacidad": 23,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "F239",
+        "edificio": "F",
+        "nivel": 2,
+        "identificador": "239",
+        "capacidad": 30,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "G119",
+        "edificio": "G",
+        "nivel": 1,
+        "identificador": "119",
+        "capacidad": 25,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "E101",
+        "edificio": "E",
+        "nivel": 1,
+        "identificador": "101",
+        "capacidad": 22,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "J104",
+        "edificio": "J",
+        "nivel": 1,
+        "identificador": "104",
+        "capacidad": 29,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "F118",
+        "edificio": "F",
+        "nivel": 1,
+        "identificador": "118",
+        "capacidad": 27,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "C217",
+        "edificio": "C",
+        "nivel": 2,
+        "identificador": "217",
+        "capacidad": 26,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "I219",
+        "edificio": "I",
+        "nivel": 2,
+        "identificador": "219",
         "capacidad": 33,
         "laboratorio": false,
         "tipo": "comun"
     },
     {
-        "id": "J137",
-        "edificio": "J",
-        "nivel": 1,
-        "identificador": "137",
+        "id": "I217",
+        "edificio": "I",
+        "nivel": 2,
+        "identificador": "217",
+        "capacidad": 21,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "F218",
+        "edificio": "F",
+        "nivel": 2,
+        "identificador": "218",
         "capacidad": 24,
         "laboratorio": true,
         "tipo": "fisica"
     },
     {
-        "id": "J139",
-        "edificio": "J",
-        "nivel": 1,
-        "identificador": "139",
-        "capacidad": 29,
-        "laboratorio": false,
-        "tipo": "comun"
+        "id": "G238",
+        "edificio": "G",
+        "nivel": 2,
+        "identificador": "238",
+        "capacidad": 20,
+        "laboratorio": true,
+        "tipo": "quimica"
     },
     {
         "id": "J202",
         "edificio": "J",
         "nivel": 2,
         "identificador": "202",
-        "capacidad": 22,
+        "capacidad": 24,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "A139",
+        "edificio": "A",
+        "nivel": 1,
+        "identificador": "139",
+        "capacidad": 31,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "G134",
+        "edificio": "G",
+        "nivel": 1,
+        "identificador": "134",
+        "capacidad": 34,
         "laboratorio": false,
         "tipo": "comun"
     },
     {
-        "id": "J210",
+        "id": "I336",
+        "edificio": "I",
+        "nivel": 3,
+        "identificador": "336",
+        "capacidad": 28,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "I329",
+        "edificio": "I",
+        "nivel": 3,
+        "identificador": "329",
+        "capacidad": 20,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "I331",
+        "edificio": "I",
+        "nivel": 3,
+        "identificador": "331",
+        "capacidad": 27,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "I341",
+        "edificio": "I",
+        "nivel": 3,
+        "identificador": "341",
+        "capacidad": 26,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "G127",
+        "edificio": "G",
+        "nivel": 1,
+        "identificador": "127",
+        "capacidad": 31,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "I207",
+        "edificio": "I",
+        "nivel": 2,
+        "identificador": "207",
+        "capacidad": 31,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "CIT330",
+        "edificio": "CIT",
+        "nivel": 3,
+        "identificador": "330",
+        "capacidad": 35,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "H229",
+        "edificio": "H",
+        "nivel": 2,
+        "identificador": "229",
+        "capacidad": 20,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "H339",
+        "edificio": "H",
+        "nivel": 3,
+        "identificador": "339",
+        "capacidad": 29,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "CIT111",
+        "edificio": "CIT",
+        "nivel": 1,
+        "identificador": "111",
+        "capacidad": 23,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "J208",
         "edificio": "J",
         "nivel": 2,
-        "identificador": "210",
+        "identificador": "208",
+        "capacidad": 30,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "C121",
+        "edificio": "C",
+        "nivel": 1,
+        "identificador": "121",
         "capacidad": 29,
         "laboratorio": false,
         "tipo": "comun"
     },
     {
-        "id": "J219",
-        "edificio": "J",
+        "id": "E235",
+        "edificio": "E",
         "nivel": 2,
-        "identificador": "219",
+        "identificador": "235",
         "capacidad": 20,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "J115",
+        "edificio": "J",
+        "nivel": 1,
+        "identificador": "115",
+        "capacidad": 21,
         "laboratorio": false,
         "tipo": "comun"
     },
     {
-        "id": "J227",
-        "edificio": "J",
-        "nivel": 2,
-        "identificador": "227",
-        "capacidad": 35,
+        "id": "I119",
+        "edificio": "I",
+        "nivel": 1,
+        "identificador": "119",
+        "capacidad": 31,
         "laboratorio": true,
         "tipo": "quimica"
     },
     {
-        "id": "J309",
-        "edificio": "J",
-        "nivel": 3,
-        "identificador": "309",
-        "capacidad": 35,
+        "id": "I133",
+        "edificio": "I",
+        "nivel": 1,
+        "identificador": "133",
+        "capacidad": 30,
         "laboratorio": false,
         "tipo": "comun"
     },
     {
-        "id": "J317",
-        "edificio": "J",
+        "id": "C340",
+        "edificio": "C",
+        "nivel": 3,
+        "identificador": "340",
+        "capacidad": 23,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "I328",
+        "edificio": "I",
+        "nivel": 3,
+        "identificador": "328",
+        "capacidad": 31,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "K207",
+        "edificio": "K",
+        "nivel": 2,
+        "identificador": "207",
+        "capacidad": 33,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "CIT317",
+        "edificio": "CIT",
         "nivel": 3,
         "identificador": "317",
-        "capacidad": 22,
+        "capacidad": 29,
         "laboratorio": false,
         "tipo": "comun"
     },
     {
-        "id": "J319",
+        "id": "J326",
         "edificio": "J",
         "nivel": 3,
-        "identificador": "319",
-        "capacidad": 20,
+        "identificador": "326",
+        "capacidad": 28,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "A102",
+        "edificio": "A",
+        "nivel": 1,
+        "identificador": "102",
+        "capacidad": 28,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "J119",
+        "edificio": "J",
+        "nivel": 1,
+        "identificador": "119",
+        "capacidad": 29,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "J226",
+        "edificio": "J",
+        "nivel": 2,
+        "identificador": "226",
+        "capacidad": 33,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "C220",
+        "edificio": "C",
+        "nivel": 2,
+        "identificador": "220",
+        "capacidad": 26,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "J216",
+        "edificio": "J",
+        "nivel": 2,
+        "identificador": "216",
+        "capacidad": 35,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "I129",
+        "edificio": "I",
+        "nivel": 1,
+        "identificador": "129",
+        "capacidad": 24,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "E212",
+        "edificio": "E",
+        "nivel": 2,
+        "identificador": "212",
+        "capacidad": 35,
         "laboratorio": true,
         "tipo": "quimica"
     },
     {
-        "id": "J320",
-        "edificio": "J",
-        "nivel": 3,
-        "identificador": "320",
-        "capacidad": 24,
+        "id": "G204",
+        "edificio": "G",
+        "nivel": 2,
+        "identificador": "204",
+        "capacidad": 34,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "F138",
+        "edificio": "F",
+        "nivel": 1,
+        "identificador": "138",
+        "capacidad": 33,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "I213",
+        "edificio": "I",
+        "nivel": 2,
+        "identificador": "213",
+        "capacidad": 28,
         "laboratorio": false,
         "tipo": "comun"
     },
@@ -1575,228 +918,885 @@
         "tipo": "comun"
     },
     {
-        "id": "J323",
-        "edificio": "J",
-        "nivel": 3,
-        "identificador": "323",
-        "capacidad": 22,
+        "id": "E229",
+        "edificio": "E",
+        "nivel": 2,
+        "identificador": "229",
+        "capacidad": 30,
         "laboratorio": false,
         "tipo": "comun"
     },
     {
-        "id": "J329",
-        "edificio": "J",
-        "nivel": 3,
-        "identificador": "329",
-        "capacidad": 35,
+        "id": "C101",
+        "edificio": "C",
+        "nivel": 1,
+        "identificador": "101",
+        "capacidad": 33,
         "laboratorio": false,
         "tipo": "comun"
     },
     {
-        "id": "J339",
-        "edificio": "J",
+        "id": "A310",
+        "edificio": "A",
         "nivel": 3,
-        "identificador": "339",
-        "capacidad": 25,
+        "identificador": "310",
+        "capacidad": 21,
         "laboratorio": true,
         "tipo": "ciencias de la vida"
     },
     {
-        "id": "K104",
-        "edificio": "K",
-        "nivel": 1,
-        "identificador": "104",
-        "capacidad": 26,
-        "laboratorio": false,
-        "tipo": "comun"
+        "id": "F236",
+        "edificio": "F",
+        "nivel": 2,
+        "identificador": "236",
+        "capacidad": 30,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
     },
     {
-        "id": "K108",
-        "edificio": "K",
-        "nivel": 1,
-        "identificador": "108",
-        "capacidad": 25,
+        "id": "A234",
+        "edificio": "A",
+        "nivel": 2,
+        "identificador": "234",
+        "capacidad": 31,
         "laboratorio": true,
         "tipo": "quimica"
     },
     {
-        "id": "K120",
-        "edificio": "K",
-        "nivel": 1,
-        "identificador": "120",
+        "id": "E213",
+        "edificio": "E",
+        "nivel": 2,
+        "identificador": "213",
         "capacidad": 24,
         "laboratorio": true,
         "tipo": "fisica"
     },
     {
-        "id": "K122",
-        "edificio": "K",
-        "nivel": 1,
-        "identificador": "122",
-        "capacidad": 27,
+        "id": "H232",
+        "edificio": "H",
+        "nivel": 2,
+        "identificador": "232",
+        "capacidad": 29,
         "laboratorio": false,
         "tipo": "comun"
     },
     {
-        "id": "K123",
-        "edificio": "K",
+        "id": "I117",
+        "edificio": "I",
         "nivel": 1,
-        "identificador": "123",
+        "identificador": "117",
+        "capacidad": 25,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "G202",
+        "edificio": "G",
+        "nivel": 2,
+        "identificador": "202",
         "capacidad": 24,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "K127",
-        "edificio": "K",
-        "nivel": 1,
-        "identificador": "127",
-        "capacidad": 22,
-        "laboratorio": false,
-        "tipo": "comun"
+        "laboratorio": true,
+        "tipo": "quimica"
     },
     {
         "id": "K141",
         "edificio": "K",
         "nivel": 1,
         "identificador": "141",
-        "capacidad": 34,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "K202",
-        "edificio": "K",
-        "nivel": 2,
-        "identificador": "202",
-        "capacidad": 30,
-        "laboratorio": true,
-        "tipo": "quimica"
-    },
-    {
-        "id": "K205",
-        "edificio": "K",
-        "nivel": 2,
-        "identificador": "205",
-        "capacidad": 26,
-        "laboratorio": false,
-        "tipo": "comun"
-    },
-    {
-        "id": "K206",
-        "edificio": "K",
-        "nivel": 2,
-        "identificador": "206",
-        "capacidad": 21,
+        "capacidad": 28,
         "laboratorio": true,
         "tipo": "ciencias de la vida"
     },
     {
-        "id": "K221",
-        "edificio": "K",
+        "id": "E202",
+        "edificio": "E",
         "nivel": 2,
-        "identificador": "221",
-        "capacidad": 26,
-        "laboratorio": true,
-        "tipo": "fisica"
-    },
-    {
-        "id": "K222",
-        "edificio": "K",
-        "nivel": 2,
-        "identificador": "222",
-        "capacidad": 32,
+        "identificador": "202",
+        "capacidad": 28,
         "laboratorio": true,
         "tipo": "quimica"
     },
     {
-        "id": "K228",
-        "edificio": "K",
+        "id": "CIT314",
+        "edificio": "CIT",
+        "nivel": 3,
+        "identificador": "314",
+        "capacidad": 35,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "J231",
+        "edificio": "J",
         "nivel": 2,
-        "identificador": "228",
+        "identificador": "231",
+        "capacidad": 22,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "CIT138",
+        "edificio": "CIT",
+        "nivel": 1,
+        "identificador": "138",
+        "capacidad": 20,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "G217",
+        "edificio": "G",
+        "nivel": 2,
+        "identificador": "217",
+        "capacidad": 33,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "F212",
+        "edificio": "F",
+        "nivel": 2,
+        "identificador": "212",
+        "capacidad": 23,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "C324",
+        "edificio": "C",
+        "nivel": 3,
+        "identificador": "324",
+        "capacidad": 22,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "A210",
+        "edificio": "A",
+        "nivel": 2,
+        "identificador": "210",
+        "capacidad": 33,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "K115",
+        "edificio": "K",
+        "nivel": 1,
+        "identificador": "115",
+        "capacidad": 34,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "I122",
+        "edificio": "I",
+        "nivel": 1,
+        "identificador": "122",
         "capacidad": 22,
         "laboratorio": true,
         "tipo": "quimica"
     },
     {
-        "id": "K231",
-        "edificio": "K",
+        "id": "H130",
+        "edificio": "H",
+        "nivel": 1,
+        "identificador": "130",
+        "capacidad": 34,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "C306",
+        "edificio": "C",
+        "nivel": 3,
+        "identificador": "306",
+        "capacidad": 33,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "C120",
+        "edificio": "C",
+        "nivel": 1,
+        "identificador": "120",
+        "capacidad": 26,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "I221",
+        "edificio": "I",
         "nivel": 2,
-        "identificador": "231",
+        "identificador": "221",
+        "capacidad": 20,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "J217",
+        "edificio": "J",
+        "nivel": 2,
+        "identificador": "217",
+        "capacidad": 31,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "E132",
+        "edificio": "E",
+        "nivel": 1,
+        "identificador": "132",
+        "capacidad": 29,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "K138",
+        "edificio": "K",
+        "nivel": 1,
+        "identificador": "138",
+        "capacidad": 35,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "CIT528",
+        "edificio": "CIT",
+        "nivel": 5,
+        "identificador": "528",
+        "capacidad": 31,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "E240",
+        "edificio": "E",
+        "nivel": 2,
+        "identificador": "240",
+        "capacidad": 30,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "C110",
+        "edificio": "C",
+        "nivel": 1,
+        "identificador": "110",
+        "capacidad": 26,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "I315",
+        "edificio": "I",
+        "nivel": 3,
+        "identificador": "315",
+        "capacidad": 28,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "C135",
+        "edificio": "C",
+        "nivel": 1,
+        "identificador": "135",
+        "capacidad": 30,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "A138",
+        "edificio": "A",
+        "nivel": 1,
+        "identificador": "138",
+        "capacidad": 35,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "G325",
+        "edificio": "G",
+        "nivel": 3,
+        "identificador": "325",
+        "capacidad": 24,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "CIT319",
+        "edificio": "CIT",
+        "nivel": 3,
+        "identificador": "319",
+        "capacidad": 24,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "E323",
+        "edificio": "E",
+        "nivel": 3,
+        "identificador": "323",
+        "capacidad": 35,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "C132",
+        "edificio": "C",
+        "nivel": 1,
+        "identificador": "132",
         "capacidad": 33,
         "laboratorio": true,
         "tipo": "fisica"
     },
     {
-        "id": "K233",
+        "id": "K216",
         "edificio": "K",
         "nivel": 2,
-        "identificador": "233",
-        "capacidad": 27,
+        "identificador": "216",
+        "capacidad": 31,
         "laboratorio": true,
-        "tipo": "quimica"
+        "tipo": "fisica"
     },
     {
-        "id": "K234",
-        "edificio": "K",
+        "id": "J224",
+        "edificio": "J",
         "nivel": 2,
-        "identificador": "234",
+        "identificador": "224",
         "capacidad": 29,
         "laboratorio": true,
-        "tipo": "ciencias de la vida"
+        "tipo": "fisica"
     },
     {
-        "id": "K237",
-        "edificio": "K",
-        "nivel": 2,
-        "identificador": "237",
+        "id": "G122",
+        "edificio": "G",
+        "nivel": 1,
+        "identificador": "122",
         "capacidad": 21,
         "laboratorio": false,
         "tipo": "comun"
     },
     {
-        "id": "K240",
-        "edificio": "K",
+        "id": "C240",
+        "edificio": "C",
         "nivel": 2,
         "identificador": "240",
+        "capacidad": 24,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "G227",
+        "edificio": "G",
+        "nivel": 2,
+        "identificador": "227",
+        "capacidad": 28,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "J318",
+        "edificio": "J",
+        "nivel": 3,
+        "identificador": "318",
+        "capacidad": 25,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "F215",
+        "edificio": "F",
+        "nivel": 2,
+        "identificador": "215",
+        "capacidad": 32,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "K328",
+        "edificio": "K",
+        "nivel": 3,
+        "identificador": "328",
+        "capacidad": 20,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "F107",
+        "edificio": "F",
+        "nivel": 1,
+        "identificador": "107",
+        "capacidad": 28,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "I209",
+        "edificio": "I",
+        "nivel": 2,
+        "identificador": "209",
+        "capacidad": 28,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "I306",
+        "edificio": "I",
+        "nivel": 3,
+        "identificador": "306",
+        "capacidad": 27,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "G216",
+        "edificio": "G",
+        "nivel": 2,
+        "identificador": "216",
+        "capacidad": 29,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "A215",
+        "edificio": "A",
+        "nivel": 2,
+        "identificador": "215",
+        "capacidad": 27,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "F233",
+        "edificio": "F",
+        "nivel": 2,
+        "identificador": "233",
+        "capacidad": 29,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "I212",
+        "edificio": "I",
+        "nivel": 2,
+        "identificador": "212",
+        "capacidad": 22,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "I138",
+        "edificio": "I",
+        "nivel": 1,
+        "identificador": "138",
+        "capacidad": 24,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "E120",
+        "edificio": "E",
+        "nivel": 1,
+        "identificador": "120",
+        "capacidad": 35,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "CIT610",
+        "edificio": "CIT",
+        "nivel": 6,
+        "identificador": "610",
+        "capacidad": 31,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "J111",
+        "edificio": "J",
+        "nivel": 1,
+        "identificador": "111",
+        "capacidad": 22,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "K314",
+        "edificio": "K",
+        "nivel": 3,
+        "identificador": "314",
+        "capacidad": 22,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "H318",
+        "edificio": "H",
+        "nivel": 3,
+        "identificador": "318",
+        "capacidad": 21,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "J327",
+        "edificio": "J",
+        "nivel": 3,
+        "identificador": "327",
+        "capacidad": 34,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "A101",
+        "edificio": "A",
+        "nivel": 1,
+        "identificador": "101",
+        "capacidad": 26,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "G234",
+        "edificio": "G",
+        "nivel": 2,
+        "identificador": "234",
+        "capacidad": 27,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "F321",
+        "edificio": "F",
+        "nivel": 3,
+        "identificador": "321",
+        "capacidad": 31,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "CIT213",
+        "edificio": "CIT",
+        "nivel": 2,
+        "identificador": "213",
+        "capacidad": 27,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "G116",
+        "edificio": "G",
+        "nivel": 1,
+        "identificador": "116",
+        "capacidad": 29,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "H329",
+        "edificio": "H",
+        "nivel": 3,
+        "identificador": "329",
+        "capacidad": 28,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "G321",
+        "edificio": "G",
+        "nivel": 3,
+        "identificador": "321",
+        "capacidad": 32,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "J228",
+        "edificio": "J",
+        "nivel": 2,
+        "identificador": "228",
+        "capacidad": 24,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "C211",
+        "edificio": "C",
+        "nivel": 2,
+        "identificador": "211",
+        "capacidad": 31,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "G329",
+        "edificio": "G",
+        "nivel": 3,
+        "identificador": "329",
+        "capacidad": 35,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "I116",
+        "edificio": "I",
+        "nivel": 1,
+        "identificador": "116",
+        "capacidad": 25,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "E320",
+        "edificio": "E",
+        "nivel": 3,
+        "identificador": "320",
         "capacidad": 23,
         "laboratorio": false,
         "tipo": "comun"
     },
     {
-        "id": "K241",
-        "edificio": "K",
+        "id": "A108",
+        "edificio": "A",
+        "nivel": 1,
+        "identificador": "108",
+        "capacidad": 33,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "E121",
+        "edificio": "E",
+        "nivel": 1,
+        "identificador": "121",
+        "capacidad": 23,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "H231",
+        "edificio": "H",
         "nivel": 2,
-        "identificador": "241",
-        "capacidad": 35,
+        "identificador": "231",
+        "capacidad": 22,
         "laboratorio": true,
         "tipo": "ciencias de la vida"
     },
     {
-        "id": "K308",
+        "id": "CIT409",
+        "edificio": "CIT",
+        "nivel": 4,
+        "identificador": "409",
+        "capacidad": 30,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "H203",
+        "edificio": "H",
+        "nivel": 2,
+        "identificador": "203",
+        "capacidad": 27,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "H303",
+        "edificio": "H",
+        "nivel": 3,
+        "identificador": "303",
+        "capacidad": 26,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "K305",
         "edificio": "K",
         "nivel": 3,
-        "identificador": "308",
+        "identificador": "305",
+        "capacidad": 25,
+        "laboratorio": true,
+        "tipo": "quimica"
+    },
+    {
+        "id": "F317",
+        "edificio": "F",
+        "nivel": 3,
+        "identificador": "317",
+        "capacidad": 25,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "K131",
+        "edificio": "K",
+        "nivel": 1,
+        "identificador": "131",
+        "capacidad": 28,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "C136",
+        "edificio": "C",
+        "nivel": 1,
+        "identificador": "136",
+        "capacidad": 20,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "J113",
+        "edificio": "J",
+        "nivel": 1,
+        "identificador": "113",
+        "capacidad": 29,
+        "laboratorio": true,
+        "tipo": "ciencias de la vida"
+    },
+    {
+        "id": "I135",
+        "edificio": "I",
+        "nivel": 1,
+        "identificador": "135",
+        "capacidad": 32,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "CIT323",
+        "edificio": "CIT",
+        "nivel": 3,
+        "identificador": "323",
+        "capacidad": 25,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "I236",
+        "edificio": "I",
+        "nivel": 2,
+        "identificador": "236",
+        "capacidad": 34,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "CIT139",
+        "edificio": "CIT",
+        "nivel": 1,
+        "identificador": "139",
+        "capacidad": 29,
+        "laboratorio": true,
+        "tipo": "fisica"
+    },
+    {
+        "id": "E334",
+        "edificio": "E",
+        "nivel": 3,
+        "identificador": "334",
+        "capacidad": 32,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "K118",
+        "edificio": "K",
+        "nivel": 1,
+        "identificador": "118",
+        "capacidad": 33,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "E239",
+        "edificio": "E",
+        "nivel": 2,
+        "identificador": "239",
+        "capacidad": 22,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "CIT137",
+        "edificio": "CIT",
+        "nivel": 1,
+        "identificador": "137",
+        "capacidad": 35,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "G319",
+        "edificio": "G",
+        "nivel": 3,
+        "identificador": "319",
         "capacidad": 21,
         "laboratorio": true,
         "tipo": "ciencias de la vida"
     },
     {
-        "id": "K326",
-        "edificio": "K",
+        "id": "J140",
+        "edificio": "J",
+        "nivel": 1,
+        "identificador": "140",
+        "capacidad": 30,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "I240",
+        "edificio": "I",
+        "nivel": 2,
+        "identificador": "240",
+        "capacidad": 34,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "E302",
+        "edificio": "E",
         "nivel": 3,
-        "identificador": "326",
-        "capacidad": 29,
+        "identificador": "302",
+        "capacidad": 26,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "K116",
+        "edificio": "K",
+        "nivel": 1,
+        "identificador": "116",
+        "capacidad": 28,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "I141",
+        "edificio": "I",
+        "nivel": 1,
+        "identificador": "141",
+        "capacidad": 32,
         "laboratorio": true,
         "tipo": "quimica"
     },
     {
-        "id": "K335",
+        "id": "K336",
         "edificio": "K",
         "nivel": 3,
-        "identificador": "335",
-        "capacidad": 20,
+        "identificador": "336",
+        "capacidad": 27,
+        "laboratorio": false,
+        "tipo": "comun"
+    },
+    {
+        "id": "K316",
+        "edificio": "K",
+        "nivel": 3,
+        "identificador": "316",
+        "capacidad": 22,
         "laboratorio": true,
-        "tipo": "ciencias de la vida"
+        "tipo": "fisica"
     }
 ]
