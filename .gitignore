@@ -20,3 +20,6 @@ docker-compose.yml
 /.vscode
 .DS_Store
 *.pyc
+/dataGenerator/data
+dataGenerator/data/horarios.json
+dataGenerator/data/salones.json
