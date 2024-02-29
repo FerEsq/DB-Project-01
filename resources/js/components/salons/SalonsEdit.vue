@@ -1,88 +1,77 @@
 <template>
-    <div class="card">
-        <div v-if="loading" class="text-center">
-            <div class="card-body">
-                <i class="fas fa-spinner fa-spin fa-2x"></i>
+    <div class="container mt-3">
+        <h1 v-if="salon._id === 0">Nuevo Salon</h1>
+        <h1 v-else>Editar Salon</h1>
+        <form @submit.prevent="crearSalon">
+            <div class="mb-3">
+                <label for="edificio" class="form-label">Edificio:</label>
+                <input type="text" class="form-control" id="edificio" v-model="formulario.edificio">
             </div>
-        </div>
-        <template v-else>
-            <div class="card-body">
-                <template>
-                    <div class="row">
-                        <div class="form-group col-sm-12">
-                            <label for="nombre">Nombre</label>
-                            <input name="nombre" type="text" class="form-control" v-model="data.role.name">
-                        </div>
-                        <div class="form-group col-sm-12">
-                            <label for="descripcion">Descripción</label>
-                            <input name="descripcion" type="text" class="form-control" v-model="data.role.description">
-                        </div>
-                    </div>
-                    <label>Permisos</label>
-                    <div class="row">
-                        <div v-for="m in data.modules" class="col-sm-4">
-                            <catalogs-rolemodule :module="m" />
-                        </div>
-                    </div>
-                </template>
+            <div class="mb-3">
+                <label for="nivel" class="form-label">Nivel:</label>
+                <input type="number" class="form-control" id="nivel" v-model.number="formulario.nivel">
             </div>
-            <div class="card-footer">
-                <button class="btn btn-primary" @click="save" :disabled="saving">Guardar</button>
+            <div class="mb-3">
+                <label for="identificador" class="form-label">Identificador:</label>
+                <input type="number" class="form-control" id="identificador" v-model.number="formulario.identificador">
             </div>
-        </template>
+            <div class="mb-3">
+                <label for="capacidad" class="form-label">Capacidad:</label>
+                <input type="number" class="form-control" id="capacidad" v-model.number="formulario.capacidad">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="laboratorio" v-model="formulario.laboratorio">
+                <label class="form-check-label" for="laboratorio">Laboratorio</label>
+            </div>
+            <div class="mb-3">
+                <label for="tipo" class="form-label">Tipo:</label>
+                <input type="text" class="form-control" id="tipo" v-model="formulario.tipo">
+            </div>
+            <button type="submit" class="btn btn-primary">Guardar</button>
+        </form>
     </div>
 </template>
 
 <script>
 import axios from 'axios';
+
 export default {
+    props: ['salon'],
     data() {
+        console.log(this.salon)
         return {
-            data: {
-                role: null,
-                modules: [],
-            },
-            loading: true,
-            saving: false
-        }
-    },
-    props: ['id', 'path'],
-    mounted() {
-        axios.get(this.path + '/' + this.id + '/detail')
-            .then(response => {
-                this.loading = false
-                this.data = response.data
-            })
-            .catch((e) => {
-                this.loading = false
-                alert(e);
-            });
+            id : this.salon._id,
+            formulario: {
+                edificio: this.salon.edificio,
+                nivel: this.salon.nivel,
+                identificador: this.salon.identificador,
+                capacidad: this.salon.capacidad,
+                laboratorio: this.salon.laboratorio,
+                tipo: this.salon.tipo
+            }
+        };
     },
     methods: {
-        save() {
-            this.saving = true
-            if (this.id !== 0) {
-                axios.patch(this.path + '/' + this.id, this.data)
-                    .then((response) => {
-                        window.location = this.path
-                    })
-                    .catch((error) => {
-                        this.saving = false
-                        alert(error.response.data.message)
-                    })
-            } else {
-                axios.post(this.path, this.data)
-                    .then((response) => {
-                        window.location = this.path
-                    })
-                    .catch((error) => {
-                        this.saving = false
-                        alert(error.response.data.message)
-                    })
+        crearSalon() {
+            let newSalon = {
+                _id: this.salon._id,
+                capacidad: this.formulario.capacidad,
+                edificio: this.formulario.edificio,
+                id: this.formulario.edificio + this.formulario.identificador.toString(),
+                identificador: this.formulario.identificador.toString(),
+                laboratorio: this.formulario.laboratorio,
+                nivel: this.formulario.nivel,
+                tipo: this.formulario.tipo
             }
-
-
-        },
+            console.log(newSalon)
+            axios.post('/horarios/salones', newSalon)
+                .then(response => {
+                    window.location.href = '/horarios/salones'
+                })
+                .catch(error => {
+                    console.error('Error al crear el salón:', error);
+                });
+        }
     }
-}
+};
 </script>

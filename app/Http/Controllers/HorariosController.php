@@ -9,11 +9,11 @@ class HorariosController extends Controller
 {
     public function index()
     {
-        $horarios = Horarios::all();
+        $horarios = Horarios::all()->take(200);
         $params = [
             'horarios' => $horarios
         ];
-            
+
 
         return view('component', [
             'component' => 'Horarios',

@@ -1,24 +1,31 @@
 <template>
     <div class="container mt-3">
-        <div>
+        <div class="row-cols-8">
             <h1>Salones</h1>
+            <button class="btn btn-outline-dark float-end" @click="editarSalon(0)">Agregar</button>
         </div>
-        <input v-model="filter" class="form-control mb-2" placeholder="Filtrar por ID..." />
+        <input v-model="filter" class="form-control mb-2" placeholder="Filtrar..." />
 
         <div class="table-responsive">
             <table class="table">
                 <thead>
                 <tr>
                     <th>ID</th>
+                    <th>Edificio</th>
+                    <th>Nivel</th>
                     <th>Tipo</th>
+                    <th>Capacidad</th>
                     <th>Laboratorio</th>
-                    <th>Acciones</th> <!-- Nueva columna para los botones de eliminar y editar -->
+                    <th>Acciones</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr v-for="item in filteredItems" :key="item._id">
                     <td>{{ item.id }}</td>
+                    <td>{{ item.edificio }}</td>
+                    <td>{{ item.nivel }}</td>
                     <td>{{ item.tipo }}</td>
+                    <td>{{ item.capacidad }}</td>
                     <td :style="{ color: item.laboratorio ? 'green' : 'red' }">{{ item.laboratorio ? 'Sí' : 'No' }}</td>
                     <td>
                         <button @click="eliminarSalon(item._id)" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
@@ -37,8 +44,9 @@ import axios from 'axios';
 export default {
     props: ['salons'],
     data() {
+        let salons = this.salons
         return {
-            items: this.salons,
+            items: salons,
             filter: '',
         };
     },
@@ -54,10 +62,9 @@ export default {
     methods: {
         eliminarSalon(id) {
             if (confirm('¿Estás seguro de que quieres eliminar este salón?')) {
-                axios.post('/eliminar-salon', {id})
+                axios.post('/horarios/salones/' + id, { _method: 'delete' })
                     .then(response => {
-                        // Actualizar la lista de salones después de eliminar uno
-                        this.salons = this.salons.filter(salon => salon._id !== id);
+                        location.reload()
                     })
                     .catch(error => {
                         console.error('Error al eliminar el salón:', error);
@@ -65,8 +72,13 @@ export default {
             }
         },
         editarSalon(id) {
-            // Aquí puedes redirigir a la página de edición o realizar alguna otra acción según tu aplicación
-            console.log('Editar salón con ID:', id);
+            axios.get('/horarios/salones/' + id + '/edit', { _method: 'edit' })
+                .then(response => {
+                    window.location.href = '/horarios/salones/' + id + '/edit';
+                })
+                .catch(error => {
+                    console.error('Error al eliminar el salón:', error);
+                });
         },
     },
 };

@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LocaleController;
-use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Catalogs\RolesController;
 use App\Http\Controllers\Catalogs\UsersController;
 use App\Http\Controllers\HorariosController;
@@ -23,7 +22,7 @@ Auth::routes();
 
 Route::group(['middleware' => ['auth']], function () {
     Route::get('/locale/{locale}', [LocaleController::class, 'index']);
-    Route::resource('profile', ProfileController::class, ['only' => ['index', 'detail', 'store']]);
+
 });
 
 Route::group(['middleware' => ['auth', 'cancerbero']], function () {
@@ -36,6 +35,6 @@ Route::group(['middleware' => ['auth', 'cancerbero']], function () {
 
     Route::prefix('horarios')->name('horarios.')->group(function () {
         Route::resource('todos', HorariosController::class);
-        Route::resource('salones', SalonsController::class);
+        Route::resource('salones', SalonsController::class,['only'=>['index','store','destroy','edit']]);
     });
 });

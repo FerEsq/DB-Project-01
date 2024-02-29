@@ -21,7 +21,7 @@ app.component("catalogs-roles-edit", CatalogsRolesEdit);
 app.component("catalogs-rolemodule", CatalogsRoleModule);
 app.component("catalogs-users-edit", CatalogsUsersEdit);
 app.component("Salons", Salons);
-app.component("Salons-Edit", SalonsEdit);
+app.component("salons-edit", SalonsEdit);
 app.component("Horarios", Horarios);
 
 // const views = import.meta.globEager("./views/*.vue");
