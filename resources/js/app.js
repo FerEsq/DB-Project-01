@@ -14,12 +14,14 @@ import CatalogsRoleModule from "../../vendor/csgt/utils/src/resources/views/cata
 import CatalogsUsersEdit from "../../vendor/csgt/utils/src/resources/views/catalogs/UsersEdit.vue";
 import Salons from "./components/salons/Salons.vue";
 import Horarios from "./components/horarios/Horarios.vue";
+import SalonsEdit from "./components/salons/SalonsEdit.vue";
 
 const app = createApp();
 app.component("catalogs-roles-edit", CatalogsRolesEdit);
 app.component("catalogs-rolemodule", CatalogsRoleModule);
 app.component("catalogs-users-edit", CatalogsUsersEdit);
 app.component("Salons", Salons);
+app.component("Salons-Edit", SalonsEdit);
 app.component("Horarios", Horarios);
 
 // const views = import.meta.globEager("./views/*.vue");
