@@ -1,6 +1,7 @@
 import json
 from faker import Faker
 import random
+from datetime import datetime
 
 fake = Faker()
 
@@ -106,7 +107,13 @@ def schedulesGenerator(n):
         salon = random.choice(referencedSalones)
         año = random.randint(2010, 2024)
         hora = fake.random_element(horarios)
-        ciclo = "ciclo " + str(random.randint(1,2))
+        ciclo = str(random.randint(1,2))
+        if ciclo == 1:
+            inicio_ciclo = datetime(year=año, month=1, day=1)
+        else:
+            inicio_ciclo = datetime(year=año, month=7, day=1)
+        ciclo = "ciclo " + ciclo
+
         
         temp = str(año) + ciclo + hora
         if temp not in ocupados:
@@ -140,21 +147,21 @@ def schedulesGenerator(n):
         schedule = {
             "salon_id": salon["id"],
             "curso": fake.random_element(cursos),
+            "facultad": fake.random_element(facultades),
             "encargados": catedraticos,
             "inicio": hora,
             "periodos": random.randint(1, 3),
             "seccion": str(random.randint(1,3)) + "0",
             "cantEst": salon["capacidad"] + random.randint(-15,15),
-            "year": año,
-            "ciclo": ciclo
+            "ciclo": ciclo,
+            "inicio_ciclo": inicio_ciclo.strftime("%Y-%m-%dT%H:%M:%SZ")
         }
 
-        #if random.random() < 0.8:
         schedules.append(schedule)
 
     return schedules
 
-def generator(n=150000):
+def generator(n=100000):
     # Generar una lista de datos aleatorios
     randomData = schedulesGenerator(n)
 
