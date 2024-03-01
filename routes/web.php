@@ -34,7 +34,7 @@ Route::group(['middleware' => ['auth', 'cancerbero']], function () {
     });
 
     Route::prefix('horarios')->name('horarios.')->group(function () {
-        Route::resource('todos', HorariosController::class);
+        Route::resource('todos', HorariosController::class,['only'=>['index','store','destroy','edit']]);
         Route::resource('salones', SalonsController::class,['only'=>['index','store','destroy','edit']]);
     });
 });

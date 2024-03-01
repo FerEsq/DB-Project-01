@@ -15,6 +15,7 @@ import CatalogsUsersEdit from "../../vendor/csgt/utils/src/resources/views/catal
 import Salons from "./components/salons/Salons.vue";
 import Horarios from "./components/horarios/Horarios.vue";
 import SalonsEdit from "./components/salons/SalonsEdit.vue";
+import HorarioEdit from "./components/horarios/HorarioEdit.vue";
 
 const app = createApp();
 app.component("catalogs-roles-edit", CatalogsRolesEdit);
@@ -22,7 +23,8 @@ app.component("catalogs-rolemodule", CatalogsRoleModule);
 app.component("catalogs-users-edit", CatalogsUsersEdit);
 app.component("Salons", Salons);
 app.component("salons-edit", SalonsEdit);
-app.component("Horarios", Horarios);
+app.component("horarios", Horarios);
+app.component('horarios-edit',HorarioEdit)
 
 // const views = import.meta.globEager("./views/*.vue");
 // const folders = import.meta.globEager("./views/*/*.vue");

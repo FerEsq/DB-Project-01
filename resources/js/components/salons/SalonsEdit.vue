@@ -38,7 +38,6 @@ import axios from 'axios';
 export default {
     props: ['salon'],
     data() {
-        console.log(this.salon)
         return {
             id : this.salon._id,
             formulario: {

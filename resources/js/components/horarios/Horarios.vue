@@ -2,7 +2,7 @@
     <div class="container mt-3">
         <div class="row-cols-8">
             <h1>Horarios</h1>
-            <button class="btn btn-outline-dark float-end" @click="editarSalon(0)">Agregar</button>
+            <button class="btn btn-outline-dark float-end" @click="editarHorario(0)">Agregar</button>
         </div>
         <input v-model="filter" class="form-control mb-2" placeholder="Filtrar..." />
 
@@ -38,8 +38,8 @@
               <td>{{ item.periodos }}</td>
               <td>{{ item.year }}</td>
                 <td>
-                    <button @click="eliminarSalon(item._id)" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
-                    <button @click="editarSalon(item._id)" class="btn btn-primary"><i class="fa-solid fa-pencil"></i></button>
+                    <button @click="eliminarHorario(item._id)" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>
+                    <button @click="editarHorario(item._id)" class="btn btn-primary"><i class="fa-solid fa-pencil"></i></button>
                 </td>
             </tr>
           </tbody>
@@ -49,12 +49,13 @@
   </template>
 
   <script>
+  import axios from "axios";
   export default {
     props: ['horarios'],
     data() {
-        console.log(this.horarios[0])
+        let horarios = this.horarios
       return {
-        items: this.horarios,
+        items: horarios,
         filter: '',
         visibleCount: 200, // Cantidad inicial de elementos visibles
         showAll: false, // Indica si se deben mostrar todos los elementos
@@ -67,6 +68,26 @@
           this.showAll = true; // Mostrar todos los elementos
         }
       },
+        eliminarHorario(id) {
+            if (confirm('¿Estás seguro de que quieres eliminar este salón?')) {
+                axios.post('/horarios/todos/' + id, { _method: 'delete' })
+                    .then(response => {
+                        location.reload()
+                    })
+                    .catch(error => {
+                        console.error('Error al eliminar el horario:', error);
+                    });
+            }
+        },
+        editarHorario(id) {
+            axios.get('/horarios/todos/' + id + '/edit', { _method: 'edit' })
+                .then(response => {
+                    window.location.href = '/horarios/todos/' + id + '/edit';
+                })
+                .catch(error => {
+                    console.error('Error al eliminar el salón:', error);
+                });
+        },
     },
   };
   </script>

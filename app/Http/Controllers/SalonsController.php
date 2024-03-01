@@ -63,7 +63,7 @@ class SalonsController extends Controller
         ];
 
         return view('component', [
-            'component' => 'Salons-Edit',
+            'component' => 'salons-edit',
             'params'    => $params,
         ]);
     }
@@ -75,6 +75,6 @@ class SalonsController extends Controller
         }
         $salon->delete();
 
-        return redirect()->back();
+        return response()->json(['message' => 'Salon eliminado correctamente'], 200);
     }
 }
