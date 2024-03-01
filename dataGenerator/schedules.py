@@ -183,4 +183,3 @@ def generator(n=100000, seed=288):
     print("Se generaron {} horarios".format(len(randomData)))
     return randomData
 
-generator()

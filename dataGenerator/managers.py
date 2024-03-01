@@ -7,6 +7,7 @@ from bson import ObjectId
 
 #Configuración de Faker
 fake = Faker("es_ES")
+fake.seed_instance(288)
 
 #Configuración de MongoDB
 client = MongoClient('localhost', 27017)
