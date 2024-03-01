@@ -6,7 +6,9 @@ from datetime import datetime
 fake = Faker()
 
 # Función para generar datos aleatorios
-def schedulesGenerator(n):
+def schedulesGenerator(n, seed=None):
+    random.seed(seed)
+
     cursos = [
         "Ciencias de la Vida",
         "Algoritmos y Programacion Basica",
@@ -112,7 +114,7 @@ def schedulesGenerator(n):
             inicio_ciclo = datetime(year=año, month=1, day=1)
         else:
             inicio_ciclo = datetime(year=año, month=7, day=1)
-        ciclo = "ciclo " + ciclo
+        ciclo = ciclo
 
         
         temp = str(año) + ciclo + hora
@@ -161,7 +163,7 @@ def schedulesGenerator(n):
 
     return schedules
 
-def generator(n=100000):
+def generator(n=100000, seed=288):
     # Generar una lista de datos aleatorios
     randomData = schedulesGenerator(n)
 

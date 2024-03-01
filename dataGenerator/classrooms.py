@@ -1,7 +1,9 @@
 import json
 import random
 
-def classRoomsGenerator(n):
+def classRoomsGenerator(n, seed=None):
+    random.seed(seed)  # Establecer la semilla
+
     edificios = ['A', 'C', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'CIT']
     classRooms = []
     used_ids = set()
@@ -41,8 +43,8 @@ def jsonGenerator(classrooms, file):
     with open(file, 'w') as f:
         json.dump(classrooms, f, indent=4)
 
-def generator(n=200):
-    classrooms = classRoomsGenerator(n)
+def generator(n=2, seed=288):
+    classrooms = classRoomsGenerator(n, seed)
     jsonGenerator(classrooms, './dataGenerator/data/salones.json')
-    #print("Se generaron {} salones".format(len(classrooms)))
+    print("Se generaron {} salones".format(len(classrooms)))
     return classrooms
