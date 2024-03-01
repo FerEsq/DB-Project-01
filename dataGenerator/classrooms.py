@@ -43,7 +43,7 @@ def jsonGenerator(classrooms, file):
     with open(file, 'w') as f:
         json.dump(classrooms, f, indent=4)
 
-def generator(n=2, seed=288):
+def generator(n=200, seed=288):
     classrooms = classRoomsGenerator(n, seed)
     jsonGenerator(classrooms, './dataGenerator/data/salones.json')
     print("Se generaron {} salones".format(len(classrooms)))

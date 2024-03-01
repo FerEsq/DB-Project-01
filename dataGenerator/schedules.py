@@ -2,8 +2,24 @@ import json
 from faker import Faker
 import random
 from datetime import datetime
+from pymongo import MongoClient
 
 fake = Faker()
+
+# Función para conectarse a la base de datos y obtener los encargados
+def getEncargados(num_encargados):
+    # Conexión a la base de datos MongoDB
+    client = MongoClient('localhost', 27017)
+    db = client['salonesuvg']
+    collection = db['encargados']
+    
+    #Obtener una muestra aleatoria de encargados de la colección
+    encargados = list(collection.aggregate([
+        {"$sample": {"size": num_encargados}},
+        {"$project": {"_id": 0, "encargado_id": {"$toString": "$_id"}, "nombre": 1, "correo": 1}}  # Convertir ObjectId a string y proyectar los campos necesarios
+    ]))
+
+    return encargados
 
 # Función para generar datos aleatorios
 def schedulesGenerator(n, seed=None):
@@ -137,20 +153,13 @@ def schedulesGenerator(n, seed=None):
         salonesOcupados[temp2].add(salon["id"])
         
         numCatedraticos = random.randint(1, 5)
-        catedraticos = [
-            {
-                "nombre": fake.name(),
-                "correo": fake.user_name() + "@uvg.edu.gt",
-                "facultad": fake.random_element(facultades)
-            }
-            for _ in range(numCatedraticos)
-        ]
-        
+        catedraticos = getEncargados(numCatedraticos)  # Obtener catedráticos de la base de datos
+
         schedule = {
             "salon_id": salon["id"],
             "curso": fake.random_element(cursos),
             "facultad": fake.random_element(facultades),
-            "encargados": catedraticos,
+            "encargados": catedraticos,  # Usar los catedráticos obtenidos de la base de datos
             "inicio": hora,
             "periodos": random.randint(1, 3),
             "seccion": str(random.randint(1,3)) + "0",
@@ -171,5 +180,7 @@ def generator(n=100000, seed=288):
     with open('./dataGenerator/data/horarios.json', 'w') as json_file:
         json.dump(randomData, json_file, indent=2)
 
-    #print("Se generaron {} horarios".format(len(randomData)))
+    print("Se generaron {} horarios".format(len(randomData)))
     return randomData
+
+generator()
