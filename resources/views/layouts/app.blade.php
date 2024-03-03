@@ -50,8 +50,8 @@
             <aside class="app-sidebar bg-body-secondary shadow" data-bs-theme="dark">
                 <div class="sidebar-brand">
                     <a href="/" class="brand-link">
-                        <img src="https://via.placeholder.com/150x150" alt="{{ config('app.name') }}"
-                            class="brand-image opacity-75 shadow">
+                        <img src="https://i.ibb.co/yY2pKyT/salonesuvg-logo.png" alt="{{ config('app.name') }}"
+                            class="brand-image">
                         <span class="brand-text fw-light">{{ config('app.name') }}</span>
                     </a>
                 </div>
