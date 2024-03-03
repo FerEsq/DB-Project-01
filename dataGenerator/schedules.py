@@ -118,7 +118,7 @@ def schedulesGenerator(n, seed=None):
     salonesOcupados = {}
 
     # Cargar datos referenciados desde un archivo JSON
-    with open('./dataGenerator/data/salones.json') as jsonFilePool:
+    with open('./data/salones.json') as jsonFilePool:
         referencedSalones = json.load(jsonFilePool)
 
     for _ in range(n):
@@ -177,7 +177,7 @@ def generator(n=100000, seed=288):
     randomData = schedulesGenerator(n)
 
     # Guardar datos en un archivo JSON
-    with open('./dataGenerator/data/horarios.json', 'w') as json_file:
+    with open('./data/horarios.json', 'w') as json_file:
         json.dump(randomData, json_file, indent=2)
 
     print("Se generaron {} horarios".format(len(randomData)))

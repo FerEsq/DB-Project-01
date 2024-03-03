@@ -45,6 +45,6 @@ def jsonGenerator(classrooms, file):
 
 def generator(n=200, seed=288):
     classrooms = classRoomsGenerator(n, seed)
-    jsonGenerator(classrooms, './dataGenerator/data/salones.json')
+    jsonGenerator(classrooms, './data/salones.json')
     print("Se generaron {} salones".format(len(classrooms)))
     return classrooms

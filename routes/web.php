@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ManagersController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LocaleController;
@@ -36,5 +37,6 @@ Route::group(['middleware' => ['auth', 'cancerbero']], function () {
     Route::prefix('horarios')->name('horarios.')->group(function () {
         Route::resource('todos', HorariosController::class,['only'=>['index','store','destroy','edit']]);
         Route::resource('salones', SalonsController::class,['only'=>['index','store','destroy','edit']]);
+        Route::resource('managers', ManagersController::class,['only'=>['index','store','destroy','edit']]);
     });
 });

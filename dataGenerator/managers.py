@@ -9,6 +9,12 @@ from bson import ObjectId
 fake = Faker("es_ES")
 fake.seed_instance(288)
 
+# mongoHost = os.environ.get('MONGODB_HOST')
+# mongoPort = int(os.environ.get('MONGODB_PORT'))
+# mongoDatabase = os.environ.get('MONGODB_DATABASE')
+# mongoUsername = os.environ.get('MONGODB_USERNAME')
+# mongoPassword = os.environ.get('MONGODB_PASSWORD')
+
 #Configuración de MongoDB
 client = MongoClient('localhost', 27017)
 db = client['salonesuvg']
@@ -18,7 +24,7 @@ fs = GridFS(db)
 #Seed
 random.seed(288)
 
-photosFolder = 'dataGenerator\photos'
+photosFolder = './photos'
 
 #Función para obtener una imagen aleatoria de la carpeta
 def getPhoto():
@@ -36,10 +42,10 @@ def dropCollection():
 #Función para insertar datos en la colección
 def insertManager():
     facultades = [
-        "Educacion", 
-        "Ingenieria", 
-        "Ciencias y Humanidades", 
-        "Ciencias Sociales", 
+        "Educacion",
+        "Ingenieria",
+        "Ciencias y Humanidades",
+        "Ciencias Sociales",
         "Design Innovations & Arts",
         "Business and Managment",
         "Arquitectura"
@@ -52,16 +58,16 @@ def insertManager():
         "celular": fake.phone_number(),
         "foto": None  # Se actualizará después con GridFS
     }
-    
+
     #Insertar documento en la colección
     encargadoID = collection.insert_one(encargado).inserted_id
-    
+
     #Actualizar el campo 'foto' utilizando GridFS
     photoData = getPhoto()
     photoID = fs.put(photoData, filename=f"{encargadoID}.jpg")
-    
+
     collection.update_one({"_id": encargadoID}, {"$set": {"foto": photoID}})
-    
+
 
 def generator(n=50000, seed=288):
     random.seed(seed)
