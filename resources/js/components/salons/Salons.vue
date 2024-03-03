@@ -6,7 +6,7 @@
         </div>
         <input v-model="filter" class="form-control mb-2" placeholder="Filtrar..." />
 
-        <div class="table-responsive">
+        <div class="table-responsive" @scroll="handleScroll">
             <table class="table">
                 <thead>
                 <tr>
@@ -35,6 +35,10 @@
                 </tbody>
             </table>
         </div>
+        <br />
+        <div>
+            <h2>Datos curiosos</h2>
+        </div>
     </div>
 </template>
 
@@ -60,6 +64,12 @@ export default {
         },
     },
     methods: {
+        handleScroll(e) {
+            const { scrollTop, clientHeight, scrollHeight } = e.target;
+            if (scrollTop + clientHeight >= scrollHeight) { // Si el usuario llega al final
+                this.showAll = true; // Mostrar todos los elementos
+            }
+        },
         eliminarSalon(id) {
             if (confirm('¿Estás seguro de que quieres eliminar este salón?')) {
                 axios.post('/horarios/salones/' + id, { _method: 'delete' })
@@ -83,3 +93,10 @@ export default {
     },
 };
 </script>
+
+<style scoped>
+.table-responsive {
+    max-height: 400px;
+    overflow-y: auto;
+}
+</style>

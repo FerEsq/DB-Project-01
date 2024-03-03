@@ -17,7 +17,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <tr v-for="item in items" :key="item._id">
+                <tr v-for="item in filteredItems" :key="item._id">
                     <td>{{ item.nombre }}</td>
                     <td>{{ item.facultad }}</td>
                     <td>{{ item.correo}}</td>
@@ -45,6 +45,15 @@ export default {
             visibleCount: 200, // Cantidad inicial de elementos visibles
             showAll: false, // Indica si se deben mostrar todos los elementos
         };
+    },
+    computed: {
+        filteredItems() {
+            return this.managers.filter((item) => {
+                return item.nombre.toLowerCase().includes(this.filter.toLowerCase()) ||
+                    item.facultad.toLowerCase().includes(this.filter.toLowerCase()) ||
+                    item.correo.toLowerCase().includes(this.filter.toLowerCase());
+            });
+        },
     },
     methods: {
         handleScroll(e) {

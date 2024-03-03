@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AggregationController;
 use App\Http\Controllers\ManagersController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
@@ -38,5 +39,9 @@ Route::group(['middleware' => ['auth', 'cancerbero']], function () {
         Route::resource('todos', HorariosController::class,['only'=>['index','store','destroy','edit']]);
         Route::resource('salones', SalonsController::class,['only'=>['index','store','destroy','edit']]);
         Route::resource('managers', ManagersController::class,['only'=>['index','store','destroy','edit']]);
+    });
+
+    Route::prefix('agregaciones')->name('agregaciones.')->group(function () {
+        Route::resource('todas', AggregationController::class,['only'=>['index','store','destroy','edit']]);
     });
 });

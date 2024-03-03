@@ -9,7 +9,11 @@ class ManagersController extends Controller
 {
     public function index()
     {
-        $managers = Manager::all();
+        $managers = Manager::all()->take(20);
+        //dd($managers->first()->foto);
+        $managers->each(function ($manager) {
+            $manager->foto = $manager->getFotoAttribute();
+        });
         $params = [
             'managers' => $managers
         ];
@@ -22,63 +26,51 @@ class ManagersController extends Controller
 
     public function store(Request $request)
     {
-        dd($request->all());
-//        if ($request->_id == 0){
-//            $salon = Salons::create([
-//                'id'    =>  $request->id,
-//                'edificio' => $request->edificio,
-//                'nivel' => $request->nivel,
-//                'identificador' => $request->identificador,
-//                'capacidad' => $request->capacidad,
-//                'laboratorio' => $request->laboratorio,
-//                'tipo' => $request->tipo,
-//            ]);
-//            return response()->json(['message' => 'Salón creado correctamente', 'salon' => $salon], 201);
-//        }
-//        else {
-//            $salon = Salons::find($request->_id);
-//            if (!$salon) {
-//                return response()->json(['error' => 'El salón no existe.'], 404);
-//            }
-//
-//            $salon->update([
-//                'id'    =>  $request->id,
-//                'edificio' => $request->edificio,
-//                'nivel' => $request->nivel,
-//                'identificador' => $request->identificador,
-//                'capacidad' => $request->capacidad,
-//                'laboratorio' => $request->laboratorio,
-//                'tipo' => $request->tipo,
-//            ]);
-//
-//            // Puedes devolver una respuesta adecuada, como un mensaje o el salón actualizado
-//            return response()->json(['message' => 'Manager actualizado correctamente', 'salon' => $manager], 200);
-//        }
+        if ($request->_id == 0){
+            $manager = Manager::create([
+                'nombre'    =>  $request->nombre,
+                'facultad' => $request->facultad,
+                'correo' => $request->correo,
+                'celular' => $request->celular,
+            ]);
+            return response()->json(['message' => 'Encargado creado correctamente', 'manager' => $manager], 201);
+        }
+        else {
+            $manager = Manager::find($request->_id);
+            if (!$manager) {
+                return response()->json(['error' => 'El Encargado no existe.'], 404);
+            }
+
+            $manager->update([
+                'nombre'    =>  $request->nombre,
+                'facultad' => $request->facultad,
+                'correo' => $request->correo,
+                'celular' => $request->celular,
+            ]);
+            return response()->json(['message' => 'Manager actualizado correctamente', 'manager' => $manager], 200);
+        }
     }
 
 
     public function edit(Request $request)
     {
-        dd($request->all());
-//        $params = [
-//            'salon' =>Salons::find($request->salone)
-//        ];
-//
-//        return view('component', [
-//            'component' => 'salons-edit',
-//            'params'    => $params,
-//        ]);
+        $params = [
+            'manager' =>Manager::find($request->manager)
+        ];
+
+        return view('component', [
+            'component' => 'manager-edit',
+            'params'    => $params,
+        ]);
     }
 
     public function destroy(Request $request) {
-        dd($request->all());
+        $manager = Manager::find($request->manager);
+        if (!$manager) {
+            return response()->json(['error' => 'El encargado no existe.'], 404);
+        }
+        $manager->delete();
 
-//        $salon = Salons::find($request->salone);
-//        if (!$salon) {
-//            return response()->json(['error' => 'El salón no existe.'], 404);
-//        }
-//        $salon->delete();
-//
-//        return response()->json(['message' => 'Salon eliminado correctamente'], 200);
+        return response()->json(['message' => 'Encargado eliminado correctamente'], 200);
     }
 }

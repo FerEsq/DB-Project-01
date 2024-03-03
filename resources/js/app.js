@@ -17,16 +17,20 @@ import Horarios from "./components/horarios/Horarios.vue";
 import SalonsEdit from "./components/salons/SalonsEdit.vue";
 import HorarioEdit from "./components/horarios/HorarioEdit.vue";
 import Managers from "./components/managers/Managers.vue";
+import ManagerEdit from "./components/managers/ManagerEdit.vue";
+import Aggregations from "./components/aggregations/Aggregations.vue";
 
 const app = createApp();
 app.component("catalogs-roles-edit", CatalogsRolesEdit);
 app.component("catalogs-rolemodule", CatalogsRoleModule);
 app.component("catalogs-users-edit", CatalogsUsersEdit);
-app.component("Salons", Salons);
+app.component("salons", Salons);
 app.component("salons-edit", SalonsEdit);
 app.component("horarios", Horarios);
 app.component('horarios-edit',HorarioEdit)
 app.component('managers', Managers)
+app.component('manager-edit', ManagerEdit)
+app.component('agregaciones', Aggregations)
 
 // const views = import.meta.globEager("./views/*.vue");
 // const folders = import.meta.globEager("./views/*/*.vue");

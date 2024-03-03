@@ -15,7 +15,7 @@ class SalonsController extends Controller
         ];
 
         return view('component', [
-            'component' => 'Salons',
+            'component' => 'salons',
             'params'    => $params,
         ]);
     }
