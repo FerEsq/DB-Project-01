@@ -19,7 +19,7 @@ class AggregationController extends Controller
             'cursoencargado'=> $this->cursoEncargado(),
             'labdemanda' => $this->labDemanda()->take(10),
         ];
-        
+
         return view('component', [
             'component' => 'agregaciones',
             'params' => $params

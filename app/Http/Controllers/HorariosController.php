@@ -4,12 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Horarios;
+use App\Models\Manager;
 
 class HorariosController extends Controller
 {
     public function index()
     {
-        $horarios = Horarios::all()->take(20);
+        $horarios = Horarios::all()->take(1000);
         $params = [
             'horarios' => $horarios
         ];
@@ -42,6 +43,10 @@ class HorariosController extends Controller
                 return response()->json(['error' => 'El horario no existe.'], 404);
             }
 
+            $nombresOriginales = collect($horario->encargados)->pluck('nombre')->all();
+            $encargadosOriginales = $horario->encargados;
+
+
             $horario->update([
                 'cantEst'    =>  $request->cantEst,
                 'ciclo' => $request->ciclo,
@@ -54,7 +59,35 @@ class HorariosController extends Controller
                 'year' => $request->year,
             ]);
 
-            // Puedes devolver una respuesta adecuada, como un mensaje o el salón actualizado
+            foreach ($nombresOriginales as $nombreOriginal) {
+                Horarios::where('encargados.nombre', $nombreOriginal)->each(function ($horario) use ($nombreOriginal, $request) {
+                    foreach ($horario->encargados as $index => $encargado) {
+                        if ($encargado['nombre'] == $nombreOriginal) {
+                            // Actualiza la información del encargado en este horario
+                            $encargadoActualizado = collect($request->encargados)->firstWhere('nombreOriginal', $nombreOriginal);
+                            if ($encargadoActualizado) {
+                                $horario->encargados[$index] = $encargadoActualizado;
+                                $horario->save();
+                            }
+                        }
+                    }
+                });
+            }
+
+            foreach ($encargadosOriginales as $encargadoOriginal) {
+                $encargado = Manager::where('nombre', $encargadoOriginal['nombre'])->first();
+                if ($encargado) {
+                    $encargadoActualizado = collect($request->encargados)
+                        ->firstWhere('nombre', $encargadoOriginal['nombre']);
+                    if ($encargadoActualizado) {
+                        $encargado->update([
+                            'nombre'  => $encargadoActualizado['nombre'],
+                            'correo'  => $encargadoActualizado['correo'],
+                        ]);
+                    }
+                }
+            }
+
             return response()->json(['message' => 'Horario actualizado correctamente', 'horario' => $horario], 200);
         }
     }

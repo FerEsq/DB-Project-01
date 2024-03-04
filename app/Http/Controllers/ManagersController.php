@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Horarios;
 use Illuminate\Http\Request;
 use App\Models\Manager;
 
@@ -9,7 +10,7 @@ class ManagersController extends Controller
 {
     public function index()
     {
-        $managers = Manager::all()->take(20);
+        $managers = Manager::all()->take(1000);
         //dd($managers->first()->foto);
         $managers->each(function ($manager) {
             $manager->foto = $manager->getFotoAttribute();
@@ -41,12 +42,24 @@ class ManagersController extends Controller
                 return response()->json(['error' => 'El Encargado no existe.'], 404);
             }
 
+            $nombreOriginal = $manager->nombre;
+
             $manager->update([
                 'nombre'    =>  $request->nombre,
                 'facultad' => $request->facultad,
                 'correo' => $request->correo,
                 'celular' => $request->celular,
             ]);
+            Horarios::where('encargados.nombre', $nombreOriginal)
+                ->update([
+                    '$set' => [
+                        'encargados.$.nombre' => $request->nombre,
+                        'encargados.$.correo' => $request->correo,
+                        // Agrega aquí cualquier otro campo que necesites actualizar
+                    ]
+                ]);
+
+
             return response()->json(['message' => 'Manager actualizado correctamente', 'manager' => $manager], 200);
         }
     }

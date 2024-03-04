@@ -35,10 +35,6 @@
                 </tbody>
             </table>
         </div>
-        <br />
-        <div>
-            <h2>Datos curiosos</h2>
-        </div>
     </div>
 </template>
 
